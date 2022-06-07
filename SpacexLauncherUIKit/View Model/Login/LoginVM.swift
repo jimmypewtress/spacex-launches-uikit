@@ -6,11 +6,17 @@
 //
 
 protocol LoginVM {
-    func login()
+    func loginButtonTapped()
 }
 
 class LoginVMImpl: LoginVM {
-    func login() {
-        print("login called")
+    private let uc: LoginUC
+    
+    init(uc: LoginUC) {
+        self.uc = uc
+    }
+    
+    func loginButtonTapped() {
+        self.uc.login(username: "", password: "")
     }
 }

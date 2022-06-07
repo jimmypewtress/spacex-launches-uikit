@@ -8,36 +8,36 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--LoginVC-->
+        <!--Launch ListVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="LoginVC" id="Y6W-OH-hqX" customClass="LoginVC" customModule="SpacexLauncherUIKit" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                <viewController storyboardIdentifier="LaunchListVC" id="Y6W-OH-hqX" customClass="LaunchListVC" customModule="SpacexLauncherUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="launch">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6T-x7-Ben">
-                                <rect key="frame" x="166" y="394" width="83" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Au5-Ih-qrc">
+                                <rect key="frame" x="186" y="438" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0T-Qu-KXA">
-                                <rect key="frame" x="177.5" y="464" width="60" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5a-Tj-Lb2">
+                                <rect key="frame" x="172" y="517" width="70" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
                                 <connections>
-                                    <action selector="loginButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="be3-in-5Mh"/>
+                                    <action selector="logoutButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="NPV-Md-Ncz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="o0T-Qu-KXA" firstAttribute="centerX" secondItem="Z6T-x7-Ben" secondAttribute="centerX" id="A3z-AY-Dlh"/>
-                            <constraint firstItem="o0T-Qu-KXA" firstAttribute="top" secondItem="Z6T-x7-Ben" secondAttribute="bottom" constant="49" id="aha-oj-oZv"/>
-                            <constraint firstItem="Z6T-x7-Ben" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="350" id="dXn-Cj-PZj"/>
-                            <constraint firstItem="Z6T-x7-Ben" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="166" id="p1L-m1-Agw"/>
+                            <constraint firstItem="Au5-Ih-qrc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="186" id="ZNN-aY-bD2"/>
+                            <constraint firstItem="i5a-Tj-Lb2" firstAttribute="top" secondItem="Au5-Ih-qrc" secondAttribute="bottom" constant="58" id="fXZ-wg-Cw1"/>
+                            <constraint firstItem="Au5-Ih-qrc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="394" id="hhv-CS-KHF"/>
+                            <constraint firstItem="i5a-Tj-Lb2" firstAttribute="centerX" secondItem="Au5-Ih-qrc" secondAttribute="centerX" id="jet-2k-vp8"/>
                         </constraints>
                     </view>
                 </viewController>

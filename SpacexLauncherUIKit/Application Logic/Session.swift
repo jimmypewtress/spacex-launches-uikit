@@ -16,8 +16,8 @@ protocol Session {
     var userState: UserState { get }
     var userStatePublisher: Published<UserState>.Publisher { get }
     
-    func login()
-    func logout()
+    func userDidLogin()
+    func userDidLogout()
     func checkUserState()
 }
 
@@ -32,14 +32,14 @@ class SessionImpl: Session, ObservableObject {
         self.userState = userState
     }
     
-    func login() {
+    func userDidLogin() {
         self.userState = .loggedIn
-        self.userIsLoggedIn = true
+        //self.userIsLoggedIn = true
     }
     
-    func logout() {
+    func userDidLogout() {
         self.userState = .loggedOut
-        self.userIsLoggedIn = false
+        //self.userIsLoggedIn = false
     }
     
     func checkUserState() {

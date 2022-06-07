@@ -22,9 +22,16 @@ class MainNavigationCoordinator: CoordinatorImpl<Void> {
             case .loggedOut:
                 window.rootViewController = r.login.vc
             case .loggedIn:
-                // TODO: show lauch list view
+                window.rootViewController = r.launchList.vc
                 break
             }
+            
+            UIView.transition(with: window,
+                              duration: Constants.MagicNumbers.mainNavigationTransitionDuration,
+                              options: [.transitionCrossDissolve],
+                              animations: nil,
+                              completion: nil)
+            
         }.store(in: &cancellables)
     }
 }

@@ -16,4 +16,8 @@ class LoginVC: UIViewController {
             vc.viewModel = viewModel
         }
     }
+    
+    @IBAction func loginButtonTapped(_ sender: UIButton) {
+        self.viewModel.loginButtonTapped()
+    }
 }
