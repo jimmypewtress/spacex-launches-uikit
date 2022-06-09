@@ -22,6 +22,7 @@
 		190E5B1C28507D1600ABC917 /* StyledRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E5B1B28507D1600ABC917 /* StyledRootView.swift */; };
 		19CFE8692851E54500A1BD80 /* StyledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CFE8682851E54500A1BD80 /* StyledButton.swift */; };
 		19CFE86B2851E56A00A1BD80 /* StyledButton+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CFE86A2851E56A00A1BD80 /* StyledButton+Style.swift */; };
+		19CFE8742851F19D00A1BD80 /* Constants+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CFE8732851F19D00A1BD80 /* Constants+Strings.swift */; };
 		19E1CDA9284F3F7700E24EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CDA8284F3F7700E24EBA /* AppDelegate.swift */; };
 		19E1CDAB284F3F7700E24EBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CDAA284F3F7700E24EBA /* SceneDelegate.swift */; };
 		19E1CDB2284F3F7900E24EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E1CDB1284F3F7900E24EBA /* Assets.xcassets */; };
@@ -89,6 +90,7 @@
 		190E5B1B28507D1600ABC917 /* StyledRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledRootView.swift; sourceTree = "<group>"; };
 		19CFE8682851E54500A1BD80 /* StyledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledButton.swift; sourceTree = "<group>"; };
 		19CFE86A2851E56A00A1BD80 /* StyledButton+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StyledButton+Style.swift"; sourceTree = "<group>"; };
+		19CFE8732851F19D00A1BD80 /* Constants+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Strings.swift"; sourceTree = "<group>"; };
 		19E1CDA5284F3F7700E24EBA /* SpacexLauncherUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpacexLauncherUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E1CDA8284F3F7700E24EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19E1CDAA284F3F7700E24EBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 				19E1CDE4284F5FC200E24EBA /* Constants.swift */,
 				19E1CDE6284F600500E24EBA /* Constants+User.swift */,
 				190E5B0E284FACE600ABC917 /* Constants+MagicNumbers.swift */,
+				19CFE8732851F19D00A1BD80 /* Constants+Strings.swift */,
 				190E5B132850723400ABC917 /* UI */,
 			);
 			path = Constants;
@@ -588,6 +591,7 @@
 				19E1CE09284F85F900E24EBA /* LoginVM.swift in Sources */,
 				19E1CE02284F84C900E24EBA /* LoginVC.swift in Sources */,
 				19E1CDEF284F650E00E24EBA /* Resolver.swift in Sources */,
+				19CFE8742851F19D00A1BD80 /* Constants+Strings.swift in Sources */,
 				190E5B172850766800ABC917 /* Constants+Colours.swift in Sources */,
 				190E5AFD284F9F3300ABC917 /* LaunchListVC.swift in Sources */,
 				19E1CDA9284F3F7700E24EBA /* AppDelegate.swift in Sources */,
