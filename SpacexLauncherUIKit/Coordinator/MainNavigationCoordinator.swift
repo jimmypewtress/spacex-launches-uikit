@@ -27,7 +27,7 @@ class MainNavigationCoordinator: CoordinatorImpl<Void> {
             }
             
             UIView.transition(with: window,
-                              duration: Constants.MagicNumbers.mainNavigationTransitionDuration,
+                              duration: Constants.MagicNumbers.defaultAnimationDuration,
                               options: [.transitionCrossDissolve],
                               animations: nil,
                               completion: nil)

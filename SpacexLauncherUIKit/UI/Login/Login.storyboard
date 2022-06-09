@@ -1,54 +1,202 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--LoginVC-->
-        <scene sceneID="s0d-6b-0kx">
+        <scene sceneID="pME-A7-IpE">
             <objects>
-                <viewController storyboardIdentifier="LoginVC" id="Y6W-OH-hqX" customClass="LoginVC" customModule="SpacexLauncherUIKit" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                <viewController storyboardIdentifier="LoginVC" id="xht-jk-xUt" userLabel="LoginVC" customClass="LoginVC" customModule="SpacexLauncherUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8EZ-DH-jBI" customClass="StyledRootView" customModule="SpacexLauncherUIKit" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6T-x7-Ben">
-                                <rect key="frame" x="166" y="394" width="83" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0T-Qu-KXA">
-                                <rect key="frame" x="177.5" y="464" width="60" height="31"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IP3-u6-4Wp">
+                                <rect key="frame" x="0.0" y="44" width="414" height="750"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhS-YQ-ATN" userLabel="Container View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="452.66666666666669"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heading" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hak-f6-Aut" customClass="StyledLabel" customModule="SpacexLauncherUIKit" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="50.000000000000007" width="374" height="31.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="sbStyle" value="semiboldLabelMain26"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heading" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omt-bY-ENB" customClass="StyledLabel" customModule="SpacexLauncherUIKit" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="96.333333333333343" width="374" height="19.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="sbStyle" value="normalLabelInfo16"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GMq-zi-uLy">
+                                                <rect key="frame" x="20" y="165.66666666666663" width="374" height="267"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Field Heading 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODc-0t-PR8" customClass="StyledLabel" customModule="SpacexLauncherUIKit" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="26"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="26" id="W9V-CH-HXd"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.25978165860000002" green="0.58059078450000001" blue="0.96894544360000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="sbStyle" value="mediumLabelMain14"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Text Field 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lAt-05-Kgk" userLabel="Email Text Field" customClass="StyledTextField" customModule="SpacexLauncherUIKit" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="46" width="374" height="50"/>
+                                                        <color key="tintColor" red="0.90993267297744751" green="0.50312286615371704" blue="0.39467954635620117" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="2Aa-dE-8h9"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="sbStyle" value="loginEmail"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Field Heading 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhG-b7-Ffx" userLabel="Text Field Heading 2" customClass="StyledLabel" customModule="SpacexLauncherUIKit" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="116.00000000000003" width="374" height="26"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="26" id="UwM-6d-1Gu"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.25978165860000002" green="0.58059078450000001" blue="0.96894544360000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="sbStyle" value="mediumLabelMain14"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Text Field 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p0L-OM-26r" userLabel="Password Text Field" customClass="StyledTextField" customModule="SpacexLauncherUIKit" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="162.00000000000003" width="374" height="50"/>
+                                                        <color key="tintColor" red="0.90993267297744751" green="0.50312286615371704" blue="0.39467954635620117" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="K83-Gb-OD4"/>
+                                                            <constraint firstAttribute="height" constant="50" id="RGY-PU-ai6"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="continue" secureTextEntry="YES" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="sbStyle" value="loginPassword"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="rightImagePadding">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUS-CV-ndf">
+                                                        <rect key="frame" x="0.0" y="232.00000000000003" width="374" height="34.999999999999972"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOd-lg-NZy" userLabel="Forgot Password Button" customClass="StyledButton" customModule="SpacexLauncherUIKit" customModuleProvider="target">
+                                                                <rect key="frame" x="329" y="0.0" width="45" height="35"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="sbStyle" value="forgotPassword"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="XOd-lg-NZy" secondAttribute="trailing" id="8qK-fM-8O2"/>
+                                                            <constraint firstAttribute="height" constant="35" id="FYm-RL-rdi"/>
+                                                            <constraint firstItem="XOd-lg-NZy" firstAttribute="top" secondItem="UUS-CV-ndf" secondAttribute="top" id="kZC-8x-Rm6"/>
+                                                            <constraint firstAttribute="bottom" secondItem="XOd-lg-NZy" secondAttribute="bottom" id="uwW-6t-gHr"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="GMq-zi-uLy" firstAttribute="leading" secondItem="rhS-YQ-ATN" secondAttribute="leading" constant="20" id="2Ee-qU-YTD"/>
+                                            <constraint firstAttribute="bottom" secondItem="GMq-zi-uLy" secondAttribute="bottom" constant="20" id="5Vk-U1-Fk9"/>
+                                            <constraint firstItem="Hak-f6-Aut" firstAttribute="top" secondItem="rhS-YQ-ATN" secondAttribute="top" constant="50" id="9FW-0e-Jot"/>
+                                            <constraint firstAttribute="trailing" secondItem="Omt-bY-ENB" secondAttribute="trailing" constant="20" symbolic="YES" id="CZy-nB-dWg"/>
+                                            <constraint firstItem="Omt-bY-ENB" firstAttribute="leading" secondItem="rhS-YQ-ATN" secondAttribute="leading" constant="20" symbolic="YES" id="GUE-Gc-ut8"/>
+                                            <constraint firstItem="GMq-zi-uLy" firstAttribute="top" secondItem="Omt-bY-ENB" secondAttribute="bottom" constant="50" id="Pmo-5A-J8n"/>
+                                            <constraint firstItem="Hak-f6-Aut" firstAttribute="leading" secondItem="rhS-YQ-ATN" secondAttribute="leading" constant="20" id="W95-S8-jTT"/>
+                                            <constraint firstAttribute="trailing" secondItem="GMq-zi-uLy" secondAttribute="trailing" constant="20" id="d1m-va-n7O"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hak-f6-Aut" secondAttribute="trailing" constant="20" id="iiV-2o-QvH"/>
+                                            <constraint firstItem="Omt-bY-ENB" firstAttribute="top" secondItem="Hak-f6-Aut" secondAttribute="bottom" constant="15" id="muW-Wb-j3D"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rhS-YQ-ATN" firstAttribute="centerY" secondItem="IP3-u6-4Wp" secondAttribute="centerY" priority="250" id="0Eo-TI-GE7"/>
+                                    <constraint firstItem="rhS-YQ-ATN" firstAttribute="top" secondItem="IP3-u6-4Wp" secondAttribute="top" id="Gb5-2c-flo"/>
+                                    <constraint firstItem="rhS-YQ-ATN" firstAttribute="leading" secondItem="IP3-u6-4Wp" secondAttribute="leading" id="NcP-6D-fLM"/>
+                                    <constraint firstItem="rhS-YQ-ATN" firstAttribute="leading" secondItem="IP3-u6-4Wp" secondAttribute="leading" id="bzU-Qy-cOx"/>
+                                    <constraint firstAttribute="trailing" secondItem="rhS-YQ-ATN" secondAttribute="trailing" id="e6W-Y4-8vc"/>
+                                    <constraint firstAttribute="bottom" secondItem="rhS-YQ-ATN" secondAttribute="bottom" id="eRW-m0-keu"/>
+                                    <constraint firstAttribute="trailing" secondItem="rhS-YQ-ATN" secondAttribute="trailing" id="juX-u4-tEj"/>
+                                    <constraint firstItem="rhS-YQ-ATN" firstAttribute="top" secondItem="IP3-u6-4Wp" secondAttribute="top" id="w0g-qd-lV5"/>
+                                    <constraint firstItem="rhS-YQ-ATN" firstAttribute="centerX" secondItem="IP3-u6-4Wp" secondAttribute="centerX" id="yCU-sH-dqT"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHB-ae-Wgb" userLabel="Login Button" customClass="StyledButton" customModule="SpacexLauncherUIKit" customModuleProvider="target">
+                                <rect key="frame" x="20" y="794" width="374" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="9Wc-rO-d15"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Login"/>
-                                <connections>
-                                    <action selector="loginButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="be3-in-5Mh"/>
-                                </connections>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="sbStyle" value="bigAction"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="L6p-XW-nfz"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="o0T-Qu-KXA" firstAttribute="centerX" secondItem="Z6T-x7-Ben" secondAttribute="centerX" id="A3z-AY-Dlh"/>
-                            <constraint firstItem="o0T-Qu-KXA" firstAttribute="top" secondItem="Z6T-x7-Ben" secondAttribute="bottom" constant="49" id="aha-oj-oZv"/>
-                            <constraint firstItem="Z6T-x7-Ben" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="350" id="dXn-Cj-PZj"/>
-                            <constraint firstItem="Z6T-x7-Ben" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="166" id="p1L-m1-Agw"/>
+                            <constraint firstItem="L6p-XW-nfz" firstAttribute="trailing" secondItem="oHB-ae-Wgb" secondAttribute="trailing" constant="20" id="Fgy-2W-kjb"/>
+                            <constraint firstItem="IP3-u6-4Wp" firstAttribute="top" secondItem="L6p-XW-nfz" secondAttribute="top" id="SJk-TA-O7e"/>
+                            <constraint firstItem="IP3-u6-4Wp" firstAttribute="leading" secondItem="L6p-XW-nfz" secondAttribute="leading" id="dg6-o9-yEe"/>
+                            <constraint firstItem="IP3-u6-4Wp" firstAttribute="trailing" secondItem="L6p-XW-nfz" secondAttribute="trailing" id="iaD-ul-ST4"/>
+                            <constraint firstItem="oHB-ae-Wgb" firstAttribute="leading" secondItem="L6p-XW-nfz" secondAttribute="leading" constant="20" id="lB6-ua-4Jj"/>
+                            <constraint firstItem="oHB-ae-Wgb" firstAttribute="top" secondItem="IP3-u6-4Wp" secondAttribute="bottom" id="nUb-wK-fQe"/>
+                            <constraint firstItem="L6p-XW-nfz" firstAttribute="bottom" secondItem="oHB-ae-Wgb" secondAttribute="bottom" priority="750" constant="20" id="oDI-Rd-ae4"/>
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rlk-Uu-KgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="94"/>
+            <point key="canvasLocation" x="402.89855072463769" y="-731.25"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
+    <designables>
+        <designable name="Hak-f6-Aut">
+            <size key="intrinsicContentSize" width="99.666666666666671" height="31.333333333333332"/>
+        </designable>
+        <designable name="ODc-0t-PR8">
+            <size key="intrinsicContentSize" width="132.66666666666666" height="17"/>
+        </designable>
+        <designable name="Omt-bY-ENB">
+            <size key="intrinsicContentSize" width="60.666666666666664" height="19.333333333333332"/>
+        </designable>
+        <designable name="QhG-b7-Ffx">
+            <size key="intrinsicContentSize" width="134.33333333333334" height="17"/>
+        </designable>
+        <designable name="XOd-lg-NZy">
+            <size key="intrinsicContentSize" width="45" height="29"/>
+        </designable>
+        <designable name="lAt-05-Kgk">
+            <size key="intrinsicContentSize" width="108.66666666666667" height="25"/>
+        </designable>
+        <designable name="oHB-ae-Wgb">
+            <size key="intrinsicContentSize" width="59" height="34"/>
+        </designable>
+        <designable name="p0L-OM-26r">
+            <size key="intrinsicContentSize" width="106.66666666666667" height="20"/>
+        </designable>
+    </designables>
 </document>
