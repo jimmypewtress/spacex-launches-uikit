@@ -27,7 +27,7 @@ extension Constants.Styles {
         static let textFieldInvalidTextColor = Constants.ColourPalette.darkRed
         
         static let buttonActive = Constants.ColourPalette.darkBlue
-        static let buttonInactive = Constants.ColourPalette.darkGray
+        static let buttonInactive = Constants.ColourPalette.mediumGray
     }
 }
 
@@ -44,6 +44,7 @@ extension Constants {
         static let lightRed = "FFEEEE".toColor
         static let darkRed = "AE0C14".toColor
         static let lightGreen = "EEFFEE".toColor
+        static let darkGreen = "#1D4741".toColor
         static let darkBlue = "005288".toColor
     }
 }

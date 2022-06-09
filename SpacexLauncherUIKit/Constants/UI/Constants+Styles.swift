@@ -63,10 +63,10 @@ extension Constants {
                                           border: Colours.viewBackground),
                             valid: .init(text: Colours.textFieldValid,
                                          background: Colours.textFieldValidBg,
-                                         border: ColourPalette.clear),
+                                         border: ColourPalette.darkGreen),
                             disabled: .init(text: Colours.textFieldDisabled,
                                             background: Colours.textFieldDisabledBg,
-                                            border:  ColourPalette.clear)
+                                            border:  Colours.viewBackground)
                         ),
                         hasBorder: true,
                         cornerRadius: 10.0
