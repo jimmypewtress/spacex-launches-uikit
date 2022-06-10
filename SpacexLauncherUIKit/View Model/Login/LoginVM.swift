@@ -111,7 +111,7 @@ class LoginVMImpl: BaseVM, LoginVM, ObservableObject {
     }
     
     func forgotPasswordButtonTapped() {
-        print("forget password button tapped")
+
     }
     
     func loginButtonTapped() {

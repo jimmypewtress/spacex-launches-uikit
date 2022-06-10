@@ -28,7 +28,19 @@
 		19CFE87A2852346700A1BD80 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CFE8792852346700A1BD80 /* BaseVC.swift */; };
 		19CFE87C28524AEF00A1BD80 /* BaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CFE87B28524AEF00A1BD80 /* BaseVM.swift */; };
 		19CFE87F28525E7700A1BD80 /* KeyboardDismissable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CFE87E28525E7700A1BD80 /* KeyboardDismissable.swift */; };
-		19D21D1428533EBC00F73F99 /* LoginOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D21D1328533EBC00F73F99 /* LoginOutput.swift */; };
+		19D21D162853442800F73F99 /* ForgotPasswordCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D21D152853442800F73F99 /* ForgotPasswordCoordinator.swift */; };
+		19D21D192853462000F73F99 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D21D182853462000F73F99 /* ForgotPasswordVC.swift */; };
+		19D21D1B2853464E00F73F99 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D21D1A2853464E00F73F99 /* ForgotPassword.storyboard */; };
+		19D21D1D285346DF00F73F99 /* ForgotPasswordVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D21D1C285346DF00F73F99 /* ForgotPasswordVM.swift */; };
+		19D21D1F2853473C00F73F99 /* ForgotPasswordUC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D21D1E2853473C00F73F99 /* ForgotPasswordUC.swift */; };
+		19D21D21285347A800F73F99 /* Resolver+ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D21D20285347A800F73F99 /* Resolver+ForgotPassword.swift */; };
+		19D21D2328535CD100F73F99 /* NavigationRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D21D2228535CD100F73F99 /* NavigationRoot.swift */; };
+		19D21D2528535E8D00F73F99 /* BaseNavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D21D2428535E8D00F73F99 /* BaseNavigationCoordinator.swift */; };
+		19D21D272853633200F73F99 /* MainNavigationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D21D262853633200F73F99 /* MainNavigationVM.swift */; };
+		19D21D292853649D00F73F99 /* Resolver+MainNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D21D282853649D00F73F99 /* Resolver+MainNavigation.swift */; };
+		19D21D2B285372CF00F73F99 /* MainNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D21D2A285372CF00F73F99 /* MainNavigationVC.swift */; };
+		19D21D2D28537F0E00F73F99 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D21D2C28537F0E00F73F99 /* LoginCoordinator.swift */; };
+		19D21D2F2853805700F73F99 /* LaunchListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D21D2E2853805700F73F99 /* LaunchListCoordinator.swift */; };
 		19E1CDA9284F3F7700E24EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CDA8284F3F7700E24EBA /* AppDelegate.swift */; };
 		19E1CDAB284F3F7700E24EBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CDAA284F3F7700E24EBA /* SceneDelegate.swift */; };
 		19E1CDB2284F3F7900E24EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E1CDB1284F3F7900E24EBA /* Assets.xcassets */; };
@@ -102,7 +114,19 @@
 		19CFE8792852346700A1BD80 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		19CFE87B28524AEF00A1BD80 /* BaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVM.swift; sourceTree = "<group>"; };
 		19CFE87E28525E7700A1BD80 /* KeyboardDismissable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDismissable.swift; sourceTree = "<group>"; };
-		19D21D1328533EBC00F73F99 /* LoginOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOutput.swift; sourceTree = "<group>"; };
+		19D21D152853442800F73F99 /* ForgotPasswordCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordCoordinator.swift; sourceTree = "<group>"; };
+		19D21D182853462000F73F99 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		19D21D1A2853464E00F73F99 /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
+		19D21D1C285346DF00F73F99 /* ForgotPasswordVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVM.swift; sourceTree = "<group>"; };
+		19D21D1E2853473C00F73F99 /* ForgotPasswordUC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordUC.swift; sourceTree = "<group>"; };
+		19D21D20285347A800F73F99 /* Resolver+ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+ForgotPassword.swift"; sourceTree = "<group>"; };
+		19D21D2228535CD100F73F99 /* NavigationRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoot.swift; sourceTree = "<group>"; };
+		19D21D2428535E8D00F73F99 /* BaseNavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationCoordinator.swift; sourceTree = "<group>"; };
+		19D21D262853633200F73F99 /* MainNavigationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationVM.swift; sourceTree = "<group>"; };
+		19D21D282853649D00F73F99 /* Resolver+MainNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+MainNavigation.swift"; sourceTree = "<group>"; };
+		19D21D2A285372CF00F73F99 /* MainNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationVC.swift; sourceTree = "<group>"; };
+		19D21D2C28537F0E00F73F99 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		19D21D2E2853805700F73F99 /* LaunchListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListCoordinator.swift; sourceTree = "<group>"; };
 		19E1CDA5284F3F7700E24EBA /* SpacexLauncherUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpacexLauncherUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E1CDA8284F3F7700E24EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19E1CDAA284F3F7700E24EBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +212,7 @@
 			children = (
 				190E5B06284FA1F600ABC917 /* LoginUC.swift */,
 				190E5B09284FA93F00ABC917 /* LogoutUC.swift */,
+				19D21D1E2853473C00F73F99 /* ForgotPasswordUC.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -204,6 +229,7 @@
 			children = (
 				19E1CE0A284F87B900E24EBA /* Resolver+Login.swift */,
 				190E5B0B284FAA6300ABC917 /* Resolver+Logout.swift */,
+				19D21D20285347A800F73F99 /* Resolver+ForgotPassword.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -260,17 +286,17 @@
 		19CFE880285334B800A1BD80 /* Business Logic */ = {
 			isa = PBXGroup;
 			children = (
-				19CFE8812853399F00A1BD80 /* Login */,
 			);
 			path = "Business Logic";
 			sourceTree = "<group>";
 		};
-		19CFE8812853399F00A1BD80 /* Login */ = {
+		19D21D172853460700F73F99 /* ForgotPassword */ = {
 			isa = PBXGroup;
 			children = (
-				19D21D1328533EBC00F73F99 /* LoginOutput.swift */,
+				19D21D182853462000F73F99 /* ForgotPasswordVC.swift */,
+				19D21D1A2853464E00F73F99 /* ForgotPassword.storyboard */,
 			);
-			path = Login;
+			path = ForgotPassword;
 			sourceTree = "<group>";
 		};
 		19E1CD9C284F3F7700E24EBA = {
@@ -337,6 +363,9 @@
 				19E1CDFB284F66A000E24EBA /* Base */,
 				19E1CDDB284F5B9D00E24EBA /* RootCoordinator.swift */,
 				19E1CDEA284F644700E24EBA /* MainNavigationCoordinator.swift */,
+				19D21D2C28537F0E00F73F99 /* LoginCoordinator.swift */,
+				19D21D152853442800F73F99 /* ForgotPasswordCoordinator.swift */,
+				19D21D2E2853805700F73F99 /* LaunchListCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -380,6 +409,7 @@
 				19E1CDEE284F650E00E24EBA /* Resolver.swift */,
 				19E1CDF3284F658800E24EBA /* SubResolver.swift */,
 				19E1CDF9284F660100E24EBA /* SingletonStorage.swift */,
+				19D21D282853649D00F73F99 /* Resolver+MainNavigation.swift */,
 				190E5B0D284FAA8000ABC917 /* Authentication */,
 				19E1CDF1284F655800E24EBA /* Views */,
 				19E1CDF2284F656100E24EBA /* General */,
@@ -409,6 +439,7 @@
 				19E1CDD8284F5B4F00E24EBA /* Coordinator.swift */,
 				19E1CDE8284F627100E24EBA /* CoordinatorOf.swift */,
 				19E1CDEC284F64A300E24EBA /* CoordinatorImpl.swift */,
+				19D21D2428535E8D00F73F99 /* BaseNavigationCoordinator.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -416,10 +447,13 @@
 		19E1CE00284F849600E24EBA /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				19D21D2228535CD100F73F99 /* NavigationRoot.swift */,
+				19CFE8792852346700A1BD80 /* BaseVC.swift */,
+				19D21D2A285372CF00F73F99 /* MainNavigationVC.swift */,
 				190E5B102850717000ABC917 /* Reusable */,
 				19E1CE03284F84D100E24EBA /* Login */,
+				19D21D172853460700F73F99 /* ForgotPassword */,
 				190E5AFB284F9F1800ABC917 /* Launches */,
-				19CFE8792852346700A1BD80 /* BaseVC.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -436,9 +470,10 @@
 		19E1CE06284F85C100E24EBA /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				19CFE87B28524AEF00A1BD80 /* BaseVM.swift */,
+				19D21D262853633200F73F99 /* MainNavigationVM.swift */,
 				19E1CE07284F85E300E24EBA /* Login */,
 				190E5B00284F9F5100ABC917 /* Launches */,
-				19CFE87B28524AEF00A1BD80 /* BaseVM.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -447,6 +482,7 @@
 			isa = PBXGroup;
 			children = (
 				19E1CE08284F85F900E24EBA /* LoginVM.swift */,
+				19D21D1C285346DF00F73F99 /* ForgotPasswordVM.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -576,6 +612,7 @@
 			files = (
 				19E1CE05284F84E500E24EBA /* Login.storyboard in Resources */,
 				19E1CDB5284F3F7900E24EBA /* LaunchScreen.storyboard in Resources */,
+				19D21D1B2853464E00F73F99 /* ForgotPassword.storyboard in Resources */,
 				19E1CDB2284F3F7900E24EBA /* Assets.xcassets in Resources */,
 				190E5AFF284F9F4700ABC917 /* LaunchList.storyboard in Resources */,
 			);
@@ -612,14 +649,18 @@
 				19E1CDF8284F65E700E24EBA /* Resolver+Session.swift in Sources */,
 				190E5B0F284FACE600ABC917 /* Constants+MagicNumbers.swift in Sources */,
 				190E5B122850718300ABC917 /* StyledLabel.swift in Sources */,
+				19D21D162853442800F73F99 /* ForgotPasswordCoordinator.swift in Sources */,
 				19FF55062851C06E0098212B /* StyledLabel+Style.swift in Sources */,
 				190E5B02284F9F6300ABC917 /* LaunchListVM.swift in Sources */,
 				190E5B0A284FA93F00ABC917 /* LogoutUC.swift in Sources */,
+				19D21D192853462000F73F99 /* ForgotPasswordVC.swift in Sources */,
 				19CFE8692851E54500A1BD80 /* StyledButton.swift in Sources */,
 				19CFE87828522B9000A1BD80 /* Constants+Validation.swift in Sources */,
 				19E1CDEB284F644700E24EBA /* MainNavigationCoordinator.swift in Sources */,
+				19D21D2D28537F0E00F73F99 /* LoginCoordinator.swift in Sources */,
 				19E1CDE2284F5EC200E24EBA /* PersistedWrapper.swift in Sources */,
 				190E5B152850725F00ABC917 /* Constants+Styles.swift in Sources */,
+				19D21D21285347A800F73F99 /* Resolver+ForgotPassword.swift in Sources */,
 				19E1CDDF284F5C0000E24EBA /* Session.swift in Sources */,
 				19E1CDED284F64A300E24EBA /* CoordinatorImpl.swift in Sources */,
 				190E5B07284FA1F600ABC917 /* LoginUC.swift in Sources */,
@@ -627,24 +668,31 @@
 				19FF550E2851CA400098212B /* Constants+Images.swift in Sources */,
 				19E1CDDC284F5B9D00E24EBA /* RootCoordinator.swift in Sources */,
 				19CFE87A2852346700A1BD80 /* BaseVC.swift in Sources */,
+				19D21D2F2853805700F73F99 /* LaunchListCoordinator.swift in Sources */,
+				19D21D2528535E8D00F73F99 /* BaseNavigationCoordinator.swift in Sources */,
 				19E1CDF4284F658800E24EBA /* SubResolver.swift in Sources */,
 				19E1CDFD284F832400E24EBA /* Utils.swift in Sources */,
 				19CFE86B2851E56A00A1BD80 /* StyledButton+Style.swift in Sources */,
 				19FF550C2851C8D80098212B /* Double+CGFloat.swift in Sources */,
 				19E1CDFF284F835F00E24EBA /* Constants+Storyboards.swift in Sources */,
 				19E1CDE7284F600500E24EBA /* Constants+User.swift in Sources */,
+				19D21D2328535CD100F73F99 /* NavigationRoot.swift in Sources */,
 				19E1CE09284F85F900E24EBA /* LoginVM.swift in Sources */,
 				19E1CE02284F84C900E24EBA /* LoginVC.swift in Sources */,
+				19D21D1D285346DF00F73F99 /* ForgotPasswordVM.swift in Sources */,
 				19CFE8762852290A00A1BD80 /* TextChange.swift in Sources */,
 				19E1CDEF284F650E00E24EBA /* Resolver.swift in Sources */,
-				19D21D1428533EBC00F73F99 /* LoginOutput.swift in Sources */,
+				19D21D272853633200F73F99 /* MainNavigationVM.swift in Sources */,
 				19CFE8742851F19D00A1BD80 /* Constants+Strings.swift in Sources */,
 				190E5B172850766800ABC917 /* Constants+Colours.swift in Sources */,
 				190E5AFD284F9F3300ABC917 /* LaunchListVC.swift in Sources */,
 				19E1CDA9284F3F7700E24EBA /* AppDelegate.swift in Sources */,
+				19D21D292853649D00F73F99 /* Resolver+MainNavigation.swift in Sources */,
+				19D21D2B285372CF00F73F99 /* MainNavigationVC.swift in Sources */,
 				19CFE87F28525E7700A1BD80 /* KeyboardDismissable.swift in Sources */,
 				19E1CDFA284F660100E24EBA /* SingletonStorage.swift in Sources */,
 				19E1CE0B284F87B900E24EBA /* Resolver+Login.swift in Sources */,
+				19D21D1F2853473C00F73F99 /* ForgotPasswordUC.swift in Sources */,
 				19FF550A2851C6910098212B /* StyledTextField+State.swift in Sources */,
 				19FF55082851C0B80098212B /* StyledTextField+Style.swift in Sources */,
 				19E1CDAB284F3F7700E24EBA /* SceneDelegate.swift in Sources */,

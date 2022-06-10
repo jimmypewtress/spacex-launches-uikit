@@ -11,8 +11,10 @@ class Resolver {
     // MARK: - Views
     lazy var login = LoginResolver(resolver: self)
     lazy var logout = LogoutResolver(resolver: self)
+    lazy var forgotPassword = ForgotPasswordResolver(resolver: self)
     lazy var launchList = LaunchListResolver(resolver: self)
     
     // MARK: - General
+    lazy var mainNavigation = MainNavigationResolver(resolver: self)
     lazy var session = SessionResolver(resolver: self)
 }

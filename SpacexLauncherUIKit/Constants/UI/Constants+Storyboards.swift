@@ -9,5 +9,6 @@ extension Constants {
     enum Storyboards: String {
         case login = "Login"
         case launchList = "LaunchList"
+        case forgotPassword = "ForgotPassword"
     }
 }
