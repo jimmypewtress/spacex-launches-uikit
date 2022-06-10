@@ -28,6 +28,7 @@
 		19CFE87A2852346700A1BD80 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CFE8792852346700A1BD80 /* BaseVC.swift */; };
 		19CFE87C28524AEF00A1BD80 /* BaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CFE87B28524AEF00A1BD80 /* BaseVM.swift */; };
 		19CFE87F28525E7700A1BD80 /* KeyboardDismissable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CFE87E28525E7700A1BD80 /* KeyboardDismissable.swift */; };
+		19D21D1428533EBC00F73F99 /* LoginOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D21D1328533EBC00F73F99 /* LoginOutput.swift */; };
 		19E1CDA9284F3F7700E24EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CDA8284F3F7700E24EBA /* AppDelegate.swift */; };
 		19E1CDAB284F3F7700E24EBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CDAA284F3F7700E24EBA /* SceneDelegate.swift */; };
 		19E1CDB2284F3F7900E24EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E1CDB1284F3F7900E24EBA /* Assets.xcassets */; };
@@ -101,6 +102,7 @@
 		19CFE8792852346700A1BD80 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		19CFE87B28524AEF00A1BD80 /* BaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVM.swift; sourceTree = "<group>"; };
 		19CFE87E28525E7700A1BD80 /* KeyboardDismissable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDismissable.swift; sourceTree = "<group>"; };
+		19D21D1328533EBC00F73F99 /* LoginOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOutput.swift; sourceTree = "<group>"; };
 		19E1CDA5284F3F7700E24EBA /* SpacexLauncherUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpacexLauncherUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E1CDA8284F3F7700E24EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19E1CDAA284F3F7700E24EBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -255,6 +257,22 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		19CFE880285334B800A1BD80 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				19CFE8812853399F00A1BD80 /* Login */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		19CFE8812853399F00A1BD80 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				19D21D1328533EBC00F73F99 /* LoginOutput.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		19E1CD9C284F3F7700E24EBA = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +304,7 @@
 				19E1CE00284F849600E24EBA /* UI */,
 				19E1CE06284F85C100E24EBA /* View Model */,
 				19E1CDDD284F5BEA00E24EBA /* Application Logic */,
+				19CFE880285334B800A1BD80 /* Business Logic */,
 				19E1CDE0284F5EA600E24EBA /* Utils */,
 				190E5B18285076E900ABC917 /* Extensions */,
 				19E1CDB1284F3F7900E24EBA /* Assets.xcassets */,
@@ -618,6 +637,7 @@
 				19E1CE02284F84C900E24EBA /* LoginVC.swift in Sources */,
 				19CFE8762852290A00A1BD80 /* TextChange.swift in Sources */,
 				19E1CDEF284F650E00E24EBA /* Resolver.swift in Sources */,
+				19D21D1428533EBC00F73F99 /* LoginOutput.swift in Sources */,
 				19CFE8742851F19D00A1BD80 /* Constants+Strings.swift in Sources */,
 				190E5B172850766800ABC917 /* Constants+Colours.swift in Sources */,
 				190E5AFD284F9F3300ABC917 /* LaunchListVC.swift in Sources */,

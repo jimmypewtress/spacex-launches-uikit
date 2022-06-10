@@ -84,6 +84,12 @@ class LoginVMImpl: BaseVM, LoginVM, ObservableObject {
         $emailIsValid.combineLatest($passwordIsValid).sink { tuple in
             self.enableLoginButton = tuple.0 && tuple.1
         }.store(in: &cancellables)
+        
+        self.uc.loginSuccessPublisher.sink { loginSuccess in
+            if loginSuccess {
+                self.reset()
+            }
+        }.store(in: &cancellables)
     }
     
     func validateEmail(textChange: TextChange) {
@@ -109,7 +115,12 @@ class LoginVMImpl: BaseVM, LoginVM, ObservableObject {
     }
     
     func loginButtonTapped() {
-        print("login button tapped")
-        //self.uc.login(username: "", password: "")
+        self.uc.login(username: self.emailValidatedText, password: self.passwordValidatedText)
+    }
+    
+    private func reset() {
+        self.emailValidatedText = ""
+        self.passwordValidatedText = ""
+        self.emailTextFieldState = .normal
     }
 }
