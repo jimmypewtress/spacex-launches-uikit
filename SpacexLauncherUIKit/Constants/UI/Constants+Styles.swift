@@ -13,6 +13,7 @@ extension Constants {
             case normalLabelInfo16
             case semiboldLabelMain26
             case mediumLabelMain14
+            case normalLabelMain13
             
             var style: StyledLabel.Style {
                 switch self {
@@ -24,6 +25,9 @@ extension Constants {
                                  colour: Colours.labelMain)
                 case .mediumLabelMain14:
                     return .init(font: UIFont.systemFont(ofSize: 14, weight: .medium),
+                                 colour: Colours.labelMain)
+                case .normalLabelMain13:
+                    return .init(font: UIFont.systemFont(ofSize: 13),
                                  colour: Colours.labelMain)
                 }
             }

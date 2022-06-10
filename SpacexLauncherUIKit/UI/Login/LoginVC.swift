@@ -90,7 +90,7 @@ class LoginVC: BaseVC {
     private func conigureUI() {
         self.headingLabel.text = strings.General.login
         self.subheadingLabel.text = strings.Login.subHeading
-        self.emailTextFieldHeadingLabel.text = strings.Login.emailTextFieldHeading
+        self.emailTextFieldHeadingLabel.text = strings.General.email
         self.emailTextField.placeholder = strings.Login.emailTextFieldPlaceHolder
         self.passwordTextFieldHeadingLabel.text = strings.General.password
         self.passwordTextField.placeholder = strings.General.password
