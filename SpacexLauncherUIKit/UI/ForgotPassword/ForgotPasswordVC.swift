@@ -16,4 +16,8 @@ class ForgotPasswordVC: BaseVC {
             vc.viewModel = viewModel
         }
     }
+    
+    @IBAction func cancelButtonTapped(_ sender: Any) {
+        self.viewModel.cancelButtonTapped()
+    }
 }

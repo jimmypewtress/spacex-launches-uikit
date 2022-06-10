@@ -37,6 +37,7 @@ class LoginVMImpl: BaseVM, LoginVM, ObservableObject {
     @Published private var passwordIsValid: Bool = false
     
     private let uc: LoginUC
+    private let forgotPasswordCoordinator: NavigationCoordinator
     
     private lazy var emailValidators: [TextChange.Validator] = [
         .init(rule: .regex(Constants.Validation.regex.email.rawValue),
@@ -76,8 +77,10 @@ class LoginVMImpl: BaseVM, LoginVM, ObservableObject {
         })
     ]
     
-    init(uc: LoginUC) {
+    init(uc: LoginUC,
+         forgotPasswordCoordinator: NavigationCoordinator) {
         self.uc = uc
+        self.forgotPasswordCoordinator = forgotPasswordCoordinator
     }
     
     override func subscribe() {
@@ -111,7 +114,7 @@ class LoginVMImpl: BaseVM, LoginVM, ObservableObject {
     }
     
     func forgotPasswordButtonTapped() {
-
+        self.forgotPasswordCoordinator.start()
     }
     
     func loginButtonTapped() {

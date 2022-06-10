@@ -95,12 +95,12 @@ extension Constants {
 
             
         enum Buttons: String {
-            case forgotPassword
+            case darkBlueText
             case bigAction
             
             var style: StyledButton.Style {
                 switch self {
-                case .forgotPassword:
+                case .darkBlueText:
                     return .init(font: UIFont.systemFont(ofSize: 14, weight: .medium),
                                  activeColors: .init(text: Colours.buttonActive,
                                                      background: Constants.ColourPalette.clear),

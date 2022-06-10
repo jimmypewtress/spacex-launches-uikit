@@ -7,16 +7,12 @@
 
 import UIKit
 
-class ForgotPasswordCoorindator: CoordinatorImpl<Void> {
-    weak var loginViewController: UIViewController?
-    
-    init(loginViewController: UIViewController?) {
-        self.loginViewController = loginViewController
-    }
-    
+class ForgotPasswordCoorindator: NavigationCoordinatorOf<Void> {
     override func onStart(_ obj: Void, r: Resolver = Resolver()) {
+        r.forgotPassword.input = .init(dismissModalCoordinator: DismissModalCoordinator(navigationViewController: self.navigationViewController))
+        
         let vc = r.forgotPassword.vc
         
-        self.loginViewController?.present(vc, animated: true)
+        self.navigationViewController?.present(vc, animated: true)
     }
 }

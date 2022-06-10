@@ -41,6 +41,7 @@
 		19D21D2B285372CF00F73F99 /* MainNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D21D2A285372CF00F73F99 /* MainNavigationVC.swift */; };
 		19D21D2D28537F0E00F73F99 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D21D2C28537F0E00F73F99 /* LoginCoordinator.swift */; };
 		19D21D2F2853805700F73F99 /* LaunchListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D21D2E2853805700F73F99 /* LaunchListCoordinator.swift */; };
+		19D21D3228539A0E00F73F99 /* DismissModalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D21D3128539A0E00F73F99 /* DismissModalCoordinator.swift */; };
 		19E1CDA9284F3F7700E24EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CDA8284F3F7700E24EBA /* AppDelegate.swift */; };
 		19E1CDAB284F3F7700E24EBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CDAA284F3F7700E24EBA /* SceneDelegate.swift */; };
 		19E1CDB2284F3F7900E24EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E1CDB1284F3F7900E24EBA /* Assets.xcassets */; };
@@ -127,6 +128,7 @@
 		19D21D2A285372CF00F73F99 /* MainNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationVC.swift; sourceTree = "<group>"; };
 		19D21D2C28537F0E00F73F99 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		19D21D2E2853805700F73F99 /* LaunchListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListCoordinator.swift; sourceTree = "<group>"; };
+		19D21D3128539A0E00F73F99 /* DismissModalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissModalCoordinator.swift; sourceTree = "<group>"; };
 		19E1CDA5284F3F7700E24EBA /* SpacexLauncherUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpacexLauncherUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E1CDA8284F3F7700E24EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19E1CDAA284F3F7700E24EBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -229,7 +231,6 @@
 			children = (
 				19E1CE0A284F87B900E24EBA /* Resolver+Login.swift */,
 				190E5B0B284FAA6300ABC917 /* Resolver+Logout.swift */,
-				19D21D20285347A800F73F99 /* Resolver+ForgotPassword.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -237,8 +238,8 @@
 		190E5B102850717000ABC917 /* Reusable */ = {
 			isa = PBXGroup;
 			children = (
-				19CFE87D28525E5D00A1BD80 /* Protocols */,
 				190E5B1B28507D1600ABC917 /* StyledRootView.swift */,
+				19CFE87D28525E5D00A1BD80 /* Protocols */,
 				19CFE8672851E52E00A1BD80 /* Button */,
 				19FF55032851C0260098212B /* Label */,
 				19FF55042851C0370098212B /* Text Field */,
@@ -297,6 +298,14 @@
 				19D21D1A2853464E00F73F99 /* ForgotPassword.storyboard */,
 			);
 			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		19D21D30285399ED00F73F99 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				19D21D3128539A0E00F73F99 /* DismissModalCoordinator.swift */,
+			);
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 		19E1CD9C284F3F7700E24EBA = {
@@ -361,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				19E1CDFB284F66A000E24EBA /* Base */,
+				19D21D30285399ED00F73F99 /* Reusable */,
 				19E1CDDB284F5B9D00E24EBA /* RootCoordinator.swift */,
 				19E1CDEA284F644700E24EBA /* MainNavigationCoordinator.swift */,
 				19D21D2C28537F0E00F73F99 /* LoginCoordinator.swift */,
@@ -420,6 +430,7 @@
 		19E1CDF1284F655800E24EBA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				19D21D20285347A800F73F99 /* Resolver+ForgotPassword.swift */,
 				190E5B03284FA08E00ABC917 /* Resolver+LaunchList.swift */,
 			);
 			path = Views;
@@ -678,6 +689,7 @@
 				19E1CDE7284F600500E24EBA /* Constants+User.swift in Sources */,
 				19D21D2328535CD100F73F99 /* NavigationRoot.swift in Sources */,
 				19E1CE09284F85F900E24EBA /* LoginVM.swift in Sources */,
+				19D21D3228539A0E00F73F99 /* DismissModalCoordinator.swift in Sources */,
 				19E1CE02284F84C900E24EBA /* LoginVC.swift in Sources */,
 				19D21D1D285346DF00F73F99 /* ForgotPasswordVM.swift in Sources */,
 				19CFE8762852290A00A1BD80 /* TextChange.swift in Sources */,

@@ -10,19 +10,17 @@ import UIKit
 extension Resolver {
     class LoginResolver: SubResolver {
         struct Input {
-            var forgotPasswordCoordinator: Coordinator
+            var forgotPasswordCoordinator: NavigationCoordinator
         }
         
         var input: Input!
         
         lazy var vc = { [unowned self] () -> UIViewController in
-            return LoginVC.createVC(
-                viewModel: self.vm
-            )
+            return LoginVC.createVC(viewModel: self.vm)
         }()
         
         lazy var vm = { [unowned self] () -> LoginVM in
-            return LoginVMImpl(uc: self.uc)
+            return LoginVMImpl(uc: self.uc, forgotPasswordCoordinator: input.forgotPasswordCoordinator)
         }()
         
         lazy var uc = { [unowned self] () -> LoginUC in
