@@ -23,7 +23,8 @@ extension Resolver {
         
         lazy var vm = { [unowned self] () -> ForgotPasswordVM in
             return ForgotPasswordVMImpl(uc: self.uc,
-                                        dismissModalCoordinator: input.dismissModalCoordinator)
+                                        dismissModalCoordinator: input.dismissModalCoordinator,
+                                        alertPresenter: self.resolver.alert.manager)
         }()
         
         lazy var uc = { [unowned self] () -> ForgotPasswordUC in

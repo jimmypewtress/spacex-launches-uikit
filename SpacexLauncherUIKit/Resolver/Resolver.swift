@@ -17,4 +17,5 @@ class Resolver {
     // MARK: - General
     lazy var mainNavigation = MainNavigationResolver(resolver: self)
     lazy var session = SessionResolver(resolver: self)
+    lazy var alert = AlertPresenterResolver(resolver: self)
 }

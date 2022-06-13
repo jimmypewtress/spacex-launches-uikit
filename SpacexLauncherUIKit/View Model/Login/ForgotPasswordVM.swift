@@ -30,6 +30,7 @@ class ForgotPasswordVMImpl: BaseVM, ForgotPasswordVM {
     
     private let uc: ForgotPasswordUC
     private let dismissModalCoordinator: NavigationCoordinator
+    private let alertPresenter: AlertManager
     
     private lazy var emailValidators: [TextChange.Validator] = [
         .init(rule: .regex(Constants.Validation.regex.email.rawValue),
@@ -49,13 +50,15 @@ class ForgotPasswordVMImpl: BaseVM, ForgotPasswordVM {
     ]
     
     init(uc: ForgotPasswordUC,
-         dismissModalCoordinator: NavigationCoordinator) {
+         dismissModalCoordinator: NavigationCoordinator,
+         alertPresenter: AlertManager) {
         self.uc = uc
         self.dismissModalCoordinator = dismissModalCoordinator
+        self.alertPresenter = alertPresenter
     }
     
     override func subscribe() {
-        self.uc.requestLinkLinkSuccessPublisher.sink { success in
+        self.uc.requestLinkSuccessPublisher.sink { success in
             if success {
                 self.showSuccessAlert()
             }
@@ -64,6 +67,10 @@ class ForgotPasswordVMImpl: BaseVM, ForgotPasswordVM {
     
     func validateEmail(textChange: TextChange) {
         let validationResult = textChange.validate(self.emailValidators)
+        
+        if textChange.newText == "" {
+            self.emailTextFieldState = .normal
+        }
         
         if validationResult != .hardFailure {
             self.enableSendLinkButton = validationResult == .success
@@ -80,13 +87,15 @@ class ForgotPasswordVMImpl: BaseVM, ForgotPasswordVM {
     }
     
     private func showSuccessAlert() {
-        let alert = UIAlertController(title: Constants.Strings.ForgotPassword.successAlertTitle,
-                                      message: Constants.Strings.ForgotPassword.successAlertMessage,
-                                      preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: Constants.Strings.General.ok, style: .default, handler: { action in
+        let alert = self.alertPresenter.alert(withTitle: Constants.Strings.ForgotPassword.successAlertTitle, message: Constants.Strings.ForgotPassword.successAlertMessage)
+
+        alertPresenter.addAction(to: alert, withTitle: Constants.Strings.General.ok, style: .default, handler: { _ in
             self.dismissModalCoordinator.start()
-        }))
+        })
         
-        self.dismissModalCoordinator.navigationViewController?.presentedViewController?.present(alert, animated: true)
+        alertPresenter.present(alert: alert, on: self.dismissModalCoordinator.navigationViewController?.presentedViewController)
+
+        
+        //self.dismissModalCoordinator.navigationViewController?.presentedViewController?.present(alert, animated: true)
     }
 }

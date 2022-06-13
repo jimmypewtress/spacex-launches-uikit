@@ -8,13 +8,13 @@
 import Combine
 
 protocol ForgotPasswordUC {
-    var requestLinkLinkSuccessPublisher: Published<Bool>.Publisher { get }
+    var requestLinkSuccessPublisher: Published<Bool>.Publisher { get }
     func requestLink(email: String)
 }
 
 class ForgotPasswordUCImpl: ForgotPasswordUC {
     @Published var requestLinkSuccess: Bool = false
-    var requestLinkLinkSuccessPublisher: Published<Bool>.Publisher { $requestLinkSuccess }
+    var requestLinkSuccessPublisher: Published<Bool>.Publisher { $requestLinkSuccess }
     
     func requestLink(email: String) {
         // TODO: mock out an api call to simulate this
