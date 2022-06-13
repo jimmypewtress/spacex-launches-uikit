@@ -9,7 +9,7 @@ import Combine
 
 protocol LoginUC {
     var loginSuccessPublisher: Published<Bool>.Publisher { get }
-    func login(username: String, password: String)
+    func login(email: String, password: String)
 }
 
 class LoginUCImpl: LoginUC, ObservableObject {
@@ -22,7 +22,7 @@ class LoginUCImpl: LoginUC, ObservableObject {
         self.session = session
     }
     
-    func login(username: String, password: String) {
+    func login(email: String, password: String) {
         // TODO: mock out an api call to simulate this
         // TODO: handle error state
         

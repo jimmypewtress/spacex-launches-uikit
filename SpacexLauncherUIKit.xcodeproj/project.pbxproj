@@ -20,6 +20,10 @@
 		190E5B172850766800ABC917 /* Constants+Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E5B162850766800ABC917 /* Constants+Colours.swift */; };
 		190E5B1A2850770D00ABC917 /* String+Colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E5B192850770D00ABC917 /* String+Colour.swift */; };
 		190E5B1C28507D1600ABC917 /* StyledRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E5B1B28507D1600ABC917 /* StyledRootView.swift */; };
+		19CCCC112857304D0015DC2B /* LoginVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CCCC102857304D0015DC2B /* LoginVMTests.swift */; };
+		19CCCC14285732BD0015DC2B /* TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CCCC13285732BD0015DC2B /* TestCase.swift */; };
+		19CCCC16285735150015DC2B /* MockedLoginUC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CCCC15285735150015DC2B /* MockedLoginUC.swift */; };
+		19CCCC192857393B0015DC2B /* MockedNavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CCCC182857393B0015DC2B /* MockedNavigationCoordinator.swift */; };
 		19CFE8692851E54500A1BD80 /* StyledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CFE8682851E54500A1BD80 /* StyledButton.swift */; };
 		19CFE86B2851E56A00A1BD80 /* StyledButton+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CFE86A2851E56A00A1BD80 /* StyledButton+Style.swift */; };
 		19CFE8742851F19D00A1BD80 /* Constants+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CFE8732851F19D00A1BD80 /* Constants+Strings.swift */; };
@@ -46,7 +50,6 @@
 		19E1CDAB284F3F7700E24EBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CDAA284F3F7700E24EBA /* SceneDelegate.swift */; };
 		19E1CDB2284F3F7900E24EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E1CDB1284F3F7900E24EBA /* Assets.xcassets */; };
 		19E1CDB5284F3F7900E24EBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19E1CDB3284F3F7900E24EBA /* LaunchScreen.storyboard */; };
-		19E1CDC0284F3F7A00E24EBA /* SpacexLauncherUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CDBF284F3F7A00E24EBA /* SpacexLauncherUIKitTests.swift */; };
 		19E1CDCA284F3F7A00E24EBA /* SpacexLauncherUIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CDC9284F3F7A00E24EBA /* SpacexLauncherUIKitUITests.swift */; };
 		19E1CDCC284F3F7A00E24EBA /* SpacexLauncherUIKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CDCB284F3F7A00E24EBA /* SpacexLauncherUIKitUITestsLaunchTests.swift */; };
 		19E1CDD9284F5B4F00E24EBA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CDD8284F5B4F00E24EBA /* Coordinator.swift */; };
@@ -107,6 +110,10 @@
 		190E5B162850766800ABC917 /* Constants+Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Colours.swift"; sourceTree = "<group>"; };
 		190E5B192850770D00ABC917 /* String+Colour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Colour.swift"; sourceTree = "<group>"; };
 		190E5B1B28507D1600ABC917 /* StyledRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledRootView.swift; sourceTree = "<group>"; };
+		19CCCC102857304D0015DC2B /* LoginVMTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVMTests.swift; sourceTree = "<group>"; };
+		19CCCC13285732BD0015DC2B /* TestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCase.swift; sourceTree = "<group>"; };
+		19CCCC15285735150015DC2B /* MockedLoginUC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedLoginUC.swift; sourceTree = "<group>"; };
+		19CCCC182857393B0015DC2B /* MockedNavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedNavigationCoordinator.swift; sourceTree = "<group>"; };
 		19CFE8682851E54500A1BD80 /* StyledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledButton.swift; sourceTree = "<group>"; };
 		19CFE86A2851E56A00A1BD80 /* StyledButton+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StyledButton+Style.swift"; sourceTree = "<group>"; };
 		19CFE8732851F19D00A1BD80 /* Constants+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Strings.swift"; sourceTree = "<group>"; };
@@ -136,7 +143,6 @@
 		19E1CDB4284F3F7900E24EBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19E1CDB6284F3F7900E24EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19E1CDBB284F3F7A00E24EBA /* SpacexLauncherUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpacexLauncherUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		19E1CDBF284F3F7A00E24EBA /* SpacexLauncherUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacexLauncherUIKitTests.swift; sourceTree = "<group>"; };
 		19E1CDC5284F3F7A00E24EBA /* SpacexLauncherUIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpacexLauncherUIKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E1CDC9284F3F7A00E24EBA /* SpacexLauncherUIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacexLauncherUIKitUITests.swift; sourceTree = "<group>"; };
 		19E1CDCB284F3F7A00E24EBA /* SpacexLauncherUIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacexLauncherUIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -267,6 +273,31 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		19CCCC0F28572FD10015DC2B /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				19CCCC102857304D0015DC2B /* LoginVMTests.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		19CCCC122857307D0015DC2B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				19CCCC182857393B0015DC2B /* MockedNavigationCoordinator.swift */,
+				19CCCC17285738970015DC2B /* UC */,
+				19CCCC15285735150015DC2B /* MockedLoginUC.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		19CCCC17285738970015DC2B /* UC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UC;
+			sourceTree = "<group>";
+		};
 		19CFE8672851E52E00A1BD80 /* Button */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,7 +383,9 @@
 		19E1CDBE284F3F7A00E24EBA /* SpacexLauncherUIKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				19E1CDBF284F3F7A00E24EBA /* SpacexLauncherUIKitTests.swift */,
+				19CCCC13285732BD0015DC2B /* TestCase.swift */,
+				19CCCC122857307D0015DC2B /* Mocks */,
+				19CCCC0F28572FD10015DC2B /* VM */,
 			);
 			path = SpacexLauncherUIKitTests;
 			sourceTree = "<group>";
@@ -588,6 +621,7 @@
 					};
 					19E1CDBA284F3F7A00E24EBA = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 						TestTargetID = 19E1CDA4284F3F7700E24EBA;
 					};
 					19E1CDC4284F3F7A00E24EBA = {
@@ -716,7 +750,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19E1CDC0284F3F7A00E24EBA /* SpacexLauncherUIKitTests.swift in Sources */,
+				19CCCC112857304D0015DC2B /* LoginVMTests.swift in Sources */,
+				19CCCC192857393B0015DC2B /* MockedNavigationCoordinator.swift in Sources */,
+				19CCCC16285735150015DC2B /* MockedLoginUC.swift in Sources */,
+				19CCCC14285732BD0015DC2B /* TestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -929,15 +966,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4YR5D8SXWJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pewtress.SpacexLauncherUIKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpacexLauncherUIKit.app/SpacexLauncherUIKit";
@@ -949,11 +993,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4YR5D8SXWJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pewtress.SpacexLauncherUIKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

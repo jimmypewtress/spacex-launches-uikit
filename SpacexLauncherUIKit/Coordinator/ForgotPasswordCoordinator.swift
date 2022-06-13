@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ForgotPasswordCoorindator: NavigationCoordinatorOf<Void> {
+class ForgotPasswordCoorindator: NavigationCoordinator {
     override func onStart(_ obj: Void, r: Resolver = Resolver()) {
         r.forgotPassword.input = .init(dismissModalCoordinator: DismissModalCoordinator(navigationViewController: self.navigationViewController))
         

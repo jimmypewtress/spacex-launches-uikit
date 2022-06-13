@@ -98,6 +98,10 @@ class LoginVMImpl: BaseVM, LoginVM, ObservableObject {
     func validateEmail(textChange: TextChange) {
         let validationResult = textChange.validate(self.emailValidators)
         
+        if textChange.newText == "" {
+            self.emailTextFieldState = .normal
+        }
+        
         if validationResult != .hardFailure {
             self.emailIsValid = validationResult == .success
             self.emailValidatedText = textChange.newText
@@ -118,7 +122,7 @@ class LoginVMImpl: BaseVM, LoginVM, ObservableObject {
     }
     
     func loginButtonTapped() {
-        self.uc.login(username: self.emailValidatedText, password: self.passwordValidatedText)
+        self.uc.login(email: self.emailValidatedText, password: self.passwordValidatedText)
     }
     
     private func reset() {
