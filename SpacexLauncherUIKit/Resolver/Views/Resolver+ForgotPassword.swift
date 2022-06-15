@@ -16,9 +16,7 @@ extension Resolver {
         var input: Input!
         
         lazy var vc = { [unowned self] () -> UIViewController in
-            return ForgotPasswordVC.createVC(
-                viewModel: self.vm
-            )
+            return ForgotPasswordVC.createVC(viewModel: self.vm)
         }()
         
         lazy var vm = { [unowned self] () -> ForgotPasswordVM in

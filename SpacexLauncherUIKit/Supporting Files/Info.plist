@@ -19,15 +19,5 @@
 			</array>
 		</dict>
 	</dict>
-	<key>base_path</key>
-	<string>$(base_path)</string>
-	<key>connection_protocol</key>
-	<string>$(connection_protocol)</string>
-	<key>environment_name</key>
-	<string>$(environment_name)</string>
-	<key>host</key>
-	<string>$(host)</string>
-	<key>port</key>
-	<string>$(port)</string>
 </dict>
 </plist>

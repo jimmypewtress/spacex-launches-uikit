@@ -11,11 +11,22 @@ protocol LaunchListVM {
     func logoutButtonTapped()
 }
 
-class LaunchListVMImpl: LaunchListVM {
+class LaunchListVMImpl: BaseVM, LaunchListVM {
+    private let uc: LaunchListUC
     private let logoutUC: LogoutUC
     
-    init(logoutUC: LogoutUC) {
+    init(uc: LaunchListUC,
+         logoutUC: LogoutUC) {
+        self.uc = uc
         self.logoutUC = logoutUC
+        
+        super.init()
+        
+        self.fetchData()
+    }
+    
+    private func fetchData() {
+        self.uc.fetchLaunches()
     }
     
     func logoutButtonTapped() {

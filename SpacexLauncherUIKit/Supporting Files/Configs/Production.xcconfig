@@ -1,0 +1,13 @@
+//
+//  Production.xcconfig
+//  SpacexLauncherUIKit
+//
+//  Created by Jimmy Pewtress on 14/06/2022.
+//
+
+environment_name            = Production
+host                        = api.spacexdata.com
+port                        =
+base_path                   = /v4
+connection_protocol         = https
+FLAGS                       =
