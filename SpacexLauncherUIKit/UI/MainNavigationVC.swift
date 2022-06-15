@@ -24,14 +24,18 @@ class MainNavigationVC: UIViewController {
     
     func didInit() {
         self.viewModel.navigationRootPublisher.sink { navigationRoot in
-            self.setRootViewController(to: navigationRoot.vc())
+            DispatchQueue.main.async {
+                self.setRootViewController(to: navigationRoot.nvc())
+            }
+            
         }.store(in: &cancellables)
     }
     
-    private func setRootViewController(to vc : UIViewController) {
+    private func setRootViewController(to vc: UINavigationController) {
         self.removeAllChildren()
         
         self.view.addSubview(vc.view)
+        self.view.addSubview(vc.navigationBar)
         self.addChild(vc)
         vc.didMove(toParent: self)
     }

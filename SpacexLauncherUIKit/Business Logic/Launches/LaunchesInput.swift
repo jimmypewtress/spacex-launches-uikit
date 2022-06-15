@@ -11,9 +11,9 @@ struct LaunchesInput: Codable {
 }
 
 struct LaunchesInputQuery: Codable {
-    
+    //  no queries
 }
 
 struct LaunchesInputOptions: Codable {
-    
+    var populate: [String] = ["rocket"]
 }

@@ -70,6 +70,13 @@
 		19D21D2D28537F0E00F73F99 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D21D2C28537F0E00F73F99 /* LoginCoordinator.swift */; };
 		19D21D2F2853805700F73F99 /* LaunchListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D21D2E2853805700F73F99 /* LaunchListCoordinator.swift */; };
 		19D21D3228539A0E00F73F99 /* DismissModalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D21D3128539A0E00F73F99 /* DismissModalCoordinator.swift */; };
+		19D80969285A2CEF0072A27F /* LaunchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D80968285A2CEF0072A27F /* LaunchCell.swift */; };
+		19D8096B285A2D340072A27F /* LaunchCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8096A285A2D340072A27F /* LaunchCellVM.swift */; };
+		19D8096D285A2E0F0072A27F /* LaunchDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8096C285A2E0F0072A27F /* LaunchDetailCell.swift */; };
+		19D8096F285A30B50072A27F /* LaunchSpinnerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8096E285A30B50072A27F /* LaunchSpinnerCell.swift */; };
+		19D80971285A3B3A0072A27F /* Array+Unique.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D80970285A3B3A0072A27F /* Array+Unique.swift */; };
+		19D80973285A49E00072A27F /* LaunchCell+ReuseId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D80972285A49E00072A27F /* LaunchCell+ReuseId.swift */; };
+		19D80975285A4A3E0072A27F /* Constants+Launches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D80974285A4A3E0072A27F /* Constants+Launches.swift */; };
 		19E1CDA9284F3F7700E24EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CDA8284F3F7700E24EBA /* AppDelegate.swift */; };
 		19E1CDAB284F3F7700E24EBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CDAA284F3F7700E24EBA /* SceneDelegate.swift */; };
 		19E1CDB2284F3F7900E24EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E1CDB1284F3F7900E24EBA /* Assets.xcassets */; };
@@ -185,6 +192,13 @@
 		19D21D2C28537F0E00F73F99 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		19D21D2E2853805700F73F99 /* LaunchListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListCoordinator.swift; sourceTree = "<group>"; };
 		19D21D3128539A0E00F73F99 /* DismissModalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissModalCoordinator.swift; sourceTree = "<group>"; };
+		19D80968285A2CEF0072A27F /* LaunchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCell.swift; sourceTree = "<group>"; };
+		19D8096A285A2D340072A27F /* LaunchCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCellVM.swift; sourceTree = "<group>"; };
+		19D8096C285A2E0F0072A27F /* LaunchDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailCell.swift; sourceTree = "<group>"; };
+		19D8096E285A30B50072A27F /* LaunchSpinnerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSpinnerCell.swift; sourceTree = "<group>"; };
+		19D80970285A3B3A0072A27F /* Array+Unique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Unique.swift"; sourceTree = "<group>"; };
+		19D80972285A49E00072A27F /* LaunchCell+ReuseId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LaunchCell+ReuseId.swift"; sourceTree = "<group>"; };
+		19D80974285A4A3E0072A27F /* Constants+Launches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Launches.swift"; sourceTree = "<group>"; };
 		19E1CDA5284F3F7700E24EBA /* SpacexLauncherUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpacexLauncherUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E1CDA8284F3F7700E24EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19E1CDAA284F3F7700E24EBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -252,6 +266,7 @@
 			children = (
 				190E5AFC284F9F3300ABC917 /* LaunchListVC.swift */,
 				190E5AFE284F9F4700ABC917 /* LaunchList.storyboard */,
+				19D80967285A2CC30072A27F /* Cell */,
 			);
 			path = Launches;
 			sourceTree = "<group>";
@@ -260,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				190E5B01284F9F6300ABC917 /* LaunchListVM.swift */,
+				19D8096A285A2D340072A27F /* LaunchCellVM.swift */,
 			);
 			path = Launches;
 			sourceTree = "<group>";
@@ -311,6 +327,7 @@
 				190E5B142850725F00ABC917 /* Constants+Styles.swift */,
 				190E5B162850766800ABC917 /* Constants+Colours.swift */,
 				19FF550D2851CA400098212B /* Constants+Images.swift */,
+				19D80974285A4A3E0072A27F /* Constants+Launches.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -321,6 +338,7 @@
 				190E5B192850770D00ABC917 /* String+Colour.swift */,
 				19FF550B2851C8D80098212B /* Double+CGFloat.swift */,
 				198246F82859B8BF001CD484 /* Data+Decode.swift */,
+				19D80970285A3B3A0072A27F /* Array+Unique.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -477,6 +495,17 @@
 				19D21D3128539A0E00F73F99 /* DismissModalCoordinator.swift */,
 			);
 			path = Reusable;
+			sourceTree = "<group>";
+		};
+		19D80967285A2CC30072A27F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				19D80968285A2CEF0072A27F /* LaunchCell.swift */,
+				19D8096C285A2E0F0072A27F /* LaunchDetailCell.swift */,
+				19D8096E285A30B50072A27F /* LaunchSpinnerCell.swift */,
+				19D80972285A49E00072A27F /* LaunchCell+ReuseId.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		19E1CD9C284F3F7700E24EBA = {
@@ -847,6 +876,8 @@
 				198246DE28588795001CD484 /* Resolver+Environment.swift in Sources */,
 				190E5B02284F9F6300ABC917 /* LaunchListVM.swift in Sources */,
 				190E5B0A284FA93F00ABC917 /* LogoutUC.swift in Sources */,
+				19D80975285A4A3E0072A27F /* Constants+Launches.swift in Sources */,
+				19D80969285A2CEF0072A27F /* LaunchCell.swift in Sources */,
 				19D21D192853462000F73F99 /* ForgotPasswordVC.swift in Sources */,
 				19CFE8692851E54500A1BD80 /* StyledButton.swift in Sources */,
 				198246EE2858DD06001CD484 /* Constants+Error.swift in Sources */,
@@ -862,6 +893,7 @@
 				19E1CDDF284F5C0000E24EBA /* Session.swift in Sources */,
 				19E1CDED284F64A300E24EBA /* CoordinatorImpl.swift in Sources */,
 				190E5B07284FA1F600ABC917 /* LoginUC.swift in Sources */,
+				19D8096D285A2E0F0072A27F /* LaunchDetailCell.swift in Sources */,
 				190E5B0C284FAA6300ABC917 /* Resolver+Logout.swift in Sources */,
 				19FF550E2851CA400098212B /* Constants+Images.swift in Sources */,
 				19E1CDDC284F5B9D00E24EBA /* RootCoordinator.swift in Sources */,
@@ -878,6 +910,7 @@
 				19FF550C2851C8D80098212B /* Double+CGFloat.swift in Sources */,
 				198247042859C416001CD484 /* BaseUC.swift in Sources */,
 				198246D128579CF9001CD484 /* AlertManager.swift in Sources */,
+				19D80973285A49E00072A27F /* LaunchCell+ReuseId.swift in Sources */,
 				19E1CDFF284F835F00E24EBA /* Constants+Storyboards.swift in Sources */,
 				19E1CDE7284F600500E24EBA /* Constants+User.swift in Sources */,
 				19D21D2328535CD100F73F99 /* NavigationRoot.swift in Sources */,
@@ -888,6 +921,7 @@
 				19E1CE02284F84C900E24EBA /* LoginVC.swift in Sources */,
 				19D21D1D285346DF00F73F99 /* ForgotPasswordVM.swift in Sources */,
 				19CFE8762852290A00A1BD80 /* TextChange.swift in Sources */,
+				19D8096F285A30B50072A27F /* LaunchSpinnerCell.swift in Sources */,
 				19E1CDEF284F650E00E24EBA /* Resolver.swift in Sources */,
 				19D21D272853633200F73F99 /* MainNavigationVM.swift in Sources */,
 				19CFE8742851F19D00A1BD80 /* Constants+Strings.swift in Sources */,
@@ -896,12 +930,14 @@
 				190E5AFD284F9F3300ABC917 /* LaunchListVC.swift in Sources */,
 				19E1CDA9284F3F7700E24EBA /* AppDelegate.swift in Sources */,
 				19D21D292853649D00F73F99 /* Resolver+MainNavigation.swift in Sources */,
+				19D80971285A3B3A0072A27F /* Array+Unique.swift in Sources */,
 				19D21D2B285372CF00F73F99 /* MainNavigationVC.swift in Sources */,
 				19CFE87F28525E7700A1BD80 /* KeyboardDismissable.swift in Sources */,
 				19E1CDFA284F660100E24EBA /* SingletonStorage.swift in Sources */,
 				198246E128588953001CD484 /* Constants+ApiEndpoint.swift in Sources */,
 				19E1CE0B284F87B900E24EBA /* Resolver+Login.swift in Sources */,
 				198246F7285907CE001CD484 /* NetworkResponse.swift in Sources */,
+				19D8096B285A2D340072A27F /* LaunchCellVM.swift in Sources */,
 				19D21D1F2853473C00F73F99 /* ForgotPasswordUC.swift in Sources */,
 				198247002859C13D001CD484 /* LaunchesOutput.swift in Sources */,
 				198246E728588F7C001CD484 /* RawRequest.swift in Sources */,

@@ -14,6 +14,9 @@ extension Constants {
             case semiboldLabelMain26
             case mediumLabelMain14
             case normalLabelMain13
+            case boldLabelMain20
+            case normalLabelInfo14
+            case boldLabelMain18
             
             var style: StyledLabel.Style {
                 switch self {
@@ -28,6 +31,15 @@ extension Constants {
                                  colour: Colours.labelMain)
                 case .normalLabelMain13:
                     return .init(font: UIFont.systemFont(ofSize: 13),
+                                 colour: Colours.labelMain)
+                case .boldLabelMain20:
+                    return .init(font: UIFont.systemFont(ofSize: 20, weight: .bold),
+                                 colour: Colours.labelMain)
+                case .normalLabelInfo14:
+                    return .init(font: UIFont.systemFont(ofSize: 14),
+                                 colour: Colours.largeInfoText)
+                case .boldLabelMain18:
+                    return .init(font: UIFont.systemFont(ofSize: 18, weight: .bold),
                                  colour: Colours.labelMain)
                 }
             }

@@ -5,6 +5,7 @@
 //  Created by Jimmy Pewtress on 10/06/2022.
 //
 
+import UIKit
 import Combine
 
 protocol MainNavigationVM {
@@ -30,13 +31,6 @@ class MainNavigationVMImpl: BaseVM, MainNavigationVM, ObservableObject {
                 self.navigationRoot = .launches
                 break
             }
-
-//            UIView.transition(with: window,
-//                              duration: Constants.MagicNumbers.defaultAnimationDuration,
-//                              options: [.transitionCrossDissolve],
-//                              animations: nil,
-//                              completion: nil)
-
         }.store(in: &cancellables)
     }
 }

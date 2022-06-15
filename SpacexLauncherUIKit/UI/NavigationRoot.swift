@@ -20,15 +20,18 @@ enum NavigationRoot {
         }
     }
     
-    func vc() -> UIViewController {
+    func nvc() -> UINavigationController {
         let nvc = UINavigationController()
         
         switch self {
         case .login:
             nvc.setNavigationBarHidden(true, animated: false)
         default:
+            nvc.setNavigationBarHidden(false, animated: false)
             break
         }
+        
+        nvc.navigationBar.prefersLargeTitles = true
         
         let coordinator = self.coordinator(navigationContoroller: nvc)
         coordinator.start()

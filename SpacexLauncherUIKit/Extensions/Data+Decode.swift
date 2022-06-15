@@ -10,6 +10,7 @@ import Foundation
 extension Data {
     func decode<Type>() -> Type? where Type: Decodable {
         let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .secondsSince1970
         
         do {
             let decodedJson = try decoder.decode(Type.self, from: self)

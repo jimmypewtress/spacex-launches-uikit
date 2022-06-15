@@ -5,6 +5,8 @@
 //  Created by Jimmy Pewtress on 15/06/2022.
 //
 
+import Foundation
+
 struct LaunchesOutput: Codable {
     var launches: [Launch]
     
@@ -14,5 +16,17 @@ struct LaunchesOutput: Codable {
 }
 
 struct Launch: Codable {
-    var details: String?
+    var rocket: Rocket
+    var success: Bool
+    var date: Date
+    
+    private enum CodingKeys: String, CodingKey {
+        case rocket
+        case success
+        case date = "date_unix"
+    }
+}
+
+struct Rocket: Codable {
+    var name: String
 }

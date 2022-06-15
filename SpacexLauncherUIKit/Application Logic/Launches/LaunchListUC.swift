@@ -30,7 +30,7 @@ class LaunchListUCImpl: BaseUC, LaunchListUC, ObservableObject {
         self.launchesRequest.fetch(input, headers: headers).sink { _ in
             //  something went wrong 😔
         } receiveValue: { response in
-            print("response = \(response)")
+            self.launchesOutput = response
         }.store(in: &cancellables)
     }
 }

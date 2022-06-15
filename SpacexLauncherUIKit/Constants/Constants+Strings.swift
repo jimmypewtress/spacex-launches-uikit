@@ -30,5 +30,14 @@ extension Constants {
             static let successAlertTitle = NSLocalizedString("Sucess", comment: "Title for Send Link success alert on Forgot Password screen")
             static let successAlertMessage = NSLocalizedString("A link has been email to you", comment: "Message for Send Link success alert on Forgot Password screen")
         }
+        
+        struct Launches {
+            static let navbarTitle = NSLocalizedString("Launches", comment: "Navbar heading for Launches screen")
+            
+            struct DetailCell {
+                static let success = NSLocalizedString("Success", comment: "Heading for Success label in launch detail cell")
+                static let date = NSLocalizedString("Date", comment: "Heading for Success label in launch detail cell")
+            }
+        }
     }
 }
