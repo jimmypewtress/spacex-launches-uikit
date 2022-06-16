@@ -12,7 +12,6 @@ class LaunchListVC: BaseVC {
     
     @IBOutlet weak var tableView: UITableView!
     
-    
     // MARK: - Constructor
     class func createVC(viewModel: LaunchListVM) -> LaunchListVC {
         return Utils.createVC(storyboard: .launchList) { vc in
@@ -37,6 +36,9 @@ class LaunchListVC: BaseVC {
     
     private func configureUI() {
         self.navigationItem.title = Constants.Strings.Launches.navbarTitle
+        
+        self.tableView.rowHeight = UITableView.automaticDimension
+        self.tableView.estimatedRowHeight = Constants.MagicNumbers.defaultLaunchCellHeight.cgFloat
     }
     
     @IBAction func logoutButtonTapped(_ sender: UIButton) {

@@ -18,5 +18,7 @@ extension Constants {
         static let defaultButtonCornerRadius = 12.0
         
         static let defaultKeyboardOffset = 20.0
+        
+        static let defaultLaunchCellHeight = 110.0
     }
 }

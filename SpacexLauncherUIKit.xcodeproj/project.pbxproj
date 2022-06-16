@@ -77,6 +77,8 @@
 		19D80971285A3B3A0072A27F /* Array+Unique.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D80970285A3B3A0072A27F /* Array+Unique.swift */; };
 		19D80973285A49E00072A27F /* LaunchCell+ReuseId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D80972285A49E00072A27F /* LaunchCell+ReuseId.swift */; };
 		19D80975285A4A3E0072A27F /* Constants+Launches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D80974285A4A3E0072A27F /* Constants+Launches.swift */; };
+		19D8097C285B35430072A27F /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8097B285B35430072A27F /* ImageCache.swift */; };
+		19D8097E285B360E0072A27F /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8097D285B360E0072A27F /* ImageLoader.swift */; };
 		19E1CDA9284F3F7700E24EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CDA8284F3F7700E24EBA /* AppDelegate.swift */; };
 		19E1CDAB284F3F7700E24EBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CDAA284F3F7700E24EBA /* SceneDelegate.swift */; };
 		19E1CDB2284F3F7900E24EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E1CDB1284F3F7900E24EBA /* Assets.xcassets */; };
@@ -199,6 +201,8 @@
 		19D80970285A3B3A0072A27F /* Array+Unique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Unique.swift"; sourceTree = "<group>"; };
 		19D80972285A49E00072A27F /* LaunchCell+ReuseId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LaunchCell+ReuseId.swift"; sourceTree = "<group>"; };
 		19D80974285A4A3E0072A27F /* Constants+Launches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Launches.swift"; sourceTree = "<group>"; };
+		19D8097B285B35430072A27F /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		19D8097D285B360E0072A27F /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		19E1CDA5284F3F7700E24EBA /* SpacexLauncherUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpacexLauncherUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E1CDA8284F3F7700E24EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19E1CDAA284F3F7700E24EBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -508,6 +512,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		19D8097A285B35200072A27F /* Image Caching */ = {
+			isa = PBXGroup;
+			children = (
+				19D8097B285B35430072A27F /* ImageCache.swift */,
+				19D8097D285B360E0072A27F /* ImageLoader.swift */,
+			);
+			path = "Image Caching";
+			sourceTree = "<group>";
+		};
 		19E1CD9C284F3F7700E24EBA = {
 			isa = PBXGroup;
 			children = (
@@ -673,6 +686,7 @@
 				19E1CE03284F84D100E24EBA /* Login */,
 				19D21D172853460700F73F99 /* ForgotPassword */,
 				190E5AFB284F9F1800ABC917 /* Launches */,
+				19D8097A285B35200072A27F /* Image Caching */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -925,6 +939,7 @@
 				19E1CDEF284F650E00E24EBA /* Resolver.swift in Sources */,
 				19D21D272853633200F73F99 /* MainNavigationVM.swift in Sources */,
 				19CFE8742851F19D00A1BD80 /* Constants+Strings.swift in Sources */,
+				19D8097C285B35430072A27F /* ImageCache.swift in Sources */,
 				198246FB2859BFA3001CD484 /* Payload+Launches.swift in Sources */,
 				190E5B172850766800ABC917 /* Constants+Colours.swift in Sources */,
 				190E5AFD284F9F3300ABC917 /* LaunchListVC.swift in Sources */,
@@ -933,6 +948,7 @@
 				19D80971285A3B3A0072A27F /* Array+Unique.swift in Sources */,
 				19D21D2B285372CF00F73F99 /* MainNavigationVC.swift in Sources */,
 				19CFE87F28525E7700A1BD80 /* KeyboardDismissable.swift in Sources */,
+				19D8097E285B360E0072A27F /* ImageLoader.swift in Sources */,
 				19E1CDFA284F660100E24EBA /* SingletonStorage.swift in Sources */,
 				198246E128588953001CD484 /* Constants+ApiEndpoint.swift in Sources */,
 				19E1CE0B284F87B900E24EBA /* Resolver+Login.swift in Sources */,
