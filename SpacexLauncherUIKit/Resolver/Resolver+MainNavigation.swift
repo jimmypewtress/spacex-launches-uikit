@@ -11,7 +11,9 @@ extension Resolver {
     class MainNavigationResolver: SubResolver {
         lazy var vc = { [unowned self] () -> UIViewController in
             return MainNavigationVC.createVC(
-                viewModel: self.vm
+                viewModel: self.vm,
+                errorHandler: self.resolver.errorHandler.uc,
+                alertPresenter: self.resolver.alert.manager
             )
             }()
         

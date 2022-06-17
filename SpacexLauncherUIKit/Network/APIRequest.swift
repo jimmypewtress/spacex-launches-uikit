@@ -41,30 +41,33 @@ class ApiRequest<RnR: RequestAndResponse> {
                 self.activityIndicator.hideLoader()
                 
                 if let networkingError = rawResponse.networkingError {
-                    // TODO: handle networking error
+                    networkingError.appError.show()
+                    
                     promise(Result.failure(APIRequestError()))
                 }
                 
                 if let httpStatusCode = rawResponse.httpStatusCode,
                    httpStatusCode != 200 {
-                    // TODO: handle status code error
+                    NetworkingError.httpIssue.appError.show()
+                    
                     promise(Result.failure(APIRequestError()))
                 }
                 
-                if let urlErrorCode = rawResponse.urlErrorCode,
+                if let _ = rawResponse.urlErrorCode,
                    let urlErrorocalisedDescription = rawResponse.urlErrorLocalizedDescription {
-                    // TODO: handle URL error
+                    NetworkingError.urlError(description: urlErrorocalisedDescription).appError.show()
+                    
                     promise(Result.failure(APIRequestError()))
                 }
                 
                 guard let _ = rawResponse.data else {
-                    //TODO: handle invalid json error
+                    NetworkingError.jsonInvalidIssue.appError.show()
                     promise(Result.failure(APIRequestError()))
                     return
                 }
                 
                 guard let response = RnR.decodeResponse(rawResponse) else {
-                    //TODO: handle deserialisation error
+                    NetworkingError.deserializationIssue.appError.show()
                     promise(Result.failure(APIRequestError()))
                     return
                 }

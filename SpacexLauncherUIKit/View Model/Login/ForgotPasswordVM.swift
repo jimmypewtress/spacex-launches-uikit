@@ -87,15 +87,16 @@ class ForgotPasswordVMImpl: BaseVM, ForgotPasswordVM {
     }
     
     private func showSuccessAlert() {
-        let alert = self.alertPresenter.alert(withTitle: Constants.Strings.ForgotPassword.successAlertTitle, message: Constants.Strings.ForgotPassword.successAlertMessage)
+        let alert = self.alertPresenter.alert(withTitle: Constants.Strings.ForgotPassword.successAlertTitle,
+                                              message: Constants.Strings.ForgotPassword.successAlertMessage)
 
-        alertPresenter.addAction(to: alert, withTitle: Constants.Strings.General.ok, style: .default, handler: { _ in
+        alertPresenter.addAction(to: alert,
+                                 withTitle: Constants.Strings.General.ok,
+                                 style: .default,
+                                 handler: { _ in
             self.dismissModalCoordinator.start()
         })
         
         alertPresenter.present(alert: alert, on: self.dismissModalCoordinator.navigationViewController?.presentedViewController)
-
-        
-        //self.dismissModalCoordinator.navigationViewController?.presentedViewController?.present(alert, animated: true)
     }
 }
