@@ -16,6 +16,7 @@ extension Constants {
         static let textfieldImageSize = (26.0, 26.0)
         
         static let defaultButtonCornerRadius = 12.0
+        static let defaultCornerRadius = 9.0
         
         static let defaultKeyboardOffset = 20.0
         

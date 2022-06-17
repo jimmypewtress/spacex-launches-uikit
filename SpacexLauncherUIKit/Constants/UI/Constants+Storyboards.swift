@@ -10,5 +10,6 @@ extension Constants {
         case login = "Login"
         case launchList = "LaunchList"
         case forgotPassword = "ForgotPassword"
+        case activityIndicator = "ActivityIndicator"
     }
 }

@@ -14,8 +14,9 @@ extension Resolver {
         }()
         
         func request<Type>() -> ApiRequest<Type> {
-            let apiRequest = ApiRequest<Type>()
-            apiRequest.network = self.network
+            let apiRequest = ApiRequest<Type>(network: self.network,
+                                              activityIndicator: self.resolver.activityIndicator.uc)
+            
             
             return apiRequest
         }

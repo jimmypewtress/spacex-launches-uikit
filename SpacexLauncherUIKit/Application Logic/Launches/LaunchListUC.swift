@@ -10,7 +10,7 @@ import Combine
 protocol LaunchListUC {
     var launchesOutputPublisher: Published<LaunchesOutput?>.Publisher { get }
     
-    func fetchLaunches(currentIndex: Int, pageSize: Int)
+    func fetchLaunches(currentIndex: Int, pageSize: Int, showSpinner: Bool)
 }
 
 class LaunchListUCImpl: BaseUC, LaunchListUC, ObservableObject {
@@ -23,13 +23,13 @@ class LaunchListUCImpl: BaseUC, LaunchListUC, ObservableObject {
         self.launchesRequest = launchesRequest
     }
     
-    func fetchLaunches(currentIndex: Int, pageSize: Int) {
+    func fetchLaunches(currentIndex: Int, pageSize: Int, showSpinner: Bool) {
         let requestOptions = LaunchesInputOptions(offset: currentIndex, limit: pageSize)
         
         let input = Payload.Launches.Request(query: .init(), options: requestOptions)
         let headers = Payload.Empty()
         
-        self.launchesRequest.fetch(input, headers: headers).sink { _ in
+        self.launchesRequest.fetch(input, headers: headers, showSpinner: showSpinner).sink { _ in
             //  something went wrong 😔
         } receiveValue: { response in
             self.launchesOutput = response

@@ -53,7 +53,7 @@ class LaunchListVMImpl: BaseVM, LaunchListVM, ObservableObject {
         
         super.init()
         
-        self.getLaunches()
+        self.getLaunches(showSpinner: true)
     }
     
     override func subscribe() {
@@ -117,7 +117,8 @@ class LaunchListVMImpl: BaseVM, LaunchListVM, ObservableObject {
             self.currentIndex += pageSize
             self.currentIndex += 1
             
-            if let lastSection = self.tableSections.last {
+            if let lastSection = self.tableSections.last,
+               !self.isEndOfTheList {
                 self.tableRows[lastSection]?.append(.spinner)
             }
             
@@ -125,7 +126,7 @@ class LaunchListVMImpl: BaseVM, LaunchListVM, ObservableObject {
         }
         
         if !self.isEndOfTheList {
-            self.getLaunches()
+            self.getLaunches(showSpinner: isRefresh)
         } else {
             self.isFetching = false
         }
@@ -135,7 +136,9 @@ class LaunchListVMImpl: BaseVM, LaunchListVM, ObservableObject {
         self.logoutUC.logout()
     }
     
-    private func getLaunches() {
-        self.uc.fetchLaunches(currentIndex: self.currentIndex, pageSize: self.pageSize)
+    private func getLaunches(showSpinner: Bool) {
+        self.uc.fetchLaunches(currentIndex: self.currentIndex,
+                              pageSize: self.pageSize,
+                              showSpinner: showSpinner)
     }
 }

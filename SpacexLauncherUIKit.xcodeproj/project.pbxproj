@@ -82,6 +82,12 @@
 		19D80982285B7C4C0072A27F /* Date+Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D80981285B7C4C0072A27F /* Date+Month.swift */; };
 		19D80984285B88DC0072A27F /* LaunchSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D80983285B88DC0072A27F /* LaunchSectionHeader.swift */; };
 		19D80986285B9BE80072A27F /* Array+Unique.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D80985285B9BE80072A27F /* Array+Unique.swift */; };
+		19D8098D285C7ADB0072A27F /* ActivityIndicatorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8098C285C7ADB0072A27F /* ActivityIndicatorCoordinator.swift */; };
+		19D80990285C7BF40072A27F /* ActvityIndicatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8098F285C7BF40072A27F /* ActvityIndicatorVC.swift */; };
+		19D80992285C7C7D0072A27F /* ActivityIndicatorUC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D80991285C7C7D0072A27F /* ActivityIndicatorUC.swift */; };
+		19D80994285C7D9D0072A27F /* ActivityIndicator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D80993285C7D9D0072A27F /* ActivityIndicator.storyboard */; };
+		19D80996285C7FA90072A27F /* Resolver+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D80995285C7FA90072A27F /* Resolver+ActivityIndicator.swift */; };
+		19D80999285C83300072A27F /* PassthroughWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D80998285C83300072A27F /* PassthroughWindow.swift */; };
 		19E1CDA9284F3F7700E24EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CDA8284F3F7700E24EBA /* AppDelegate.swift */; };
 		19E1CDAB284F3F7700E24EBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CDAA284F3F7700E24EBA /* SceneDelegate.swift */; };
 		19E1CDB2284F3F7900E24EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E1CDB1284F3F7900E24EBA /* Assets.xcassets */; };
@@ -209,6 +215,12 @@
 		19D80981285B7C4C0072A27F /* Date+Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Month.swift"; sourceTree = "<group>"; };
 		19D80983285B88DC0072A27F /* LaunchSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSectionHeader.swift; sourceTree = "<group>"; };
 		19D80985285B9BE80072A27F /* Array+Unique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Unique.swift"; sourceTree = "<group>"; };
+		19D8098C285C7ADB0072A27F /* ActivityIndicatorCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorCoordinator.swift; sourceTree = "<group>"; };
+		19D8098F285C7BF40072A27F /* ActvityIndicatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActvityIndicatorVC.swift; sourceTree = "<group>"; };
+		19D80991285C7C7D0072A27F /* ActivityIndicatorUC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorUC.swift; sourceTree = "<group>"; };
+		19D80993285C7D9D0072A27F /* ActivityIndicator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivityIndicator.storyboard; sourceTree = "<group>"; };
+		19D80995285C7FA90072A27F /* Resolver+ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+ActivityIndicator.swift"; sourceTree = "<group>"; };
+		19D80998285C83300072A27F /* PassthroughWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassthroughWindow.swift; sourceTree = "<group>"; };
 		19E1CDA5284F3F7700E24EBA /* SpacexLauncherUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpacexLauncherUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E1CDA8284F3F7700E24EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19E1CDAA284F3F7700E24EBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -530,6 +542,23 @@
 			path = "Image Caching";
 			sourceTree = "<group>";
 		};
+		19D8098E285C7B480072A27F /* Activity Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				19D8098F285C7BF40072A27F /* ActvityIndicatorVC.swift */,
+				19D80993285C7D9D0072A27F /* ActivityIndicator.storyboard */,
+			);
+			path = "Activity Indicator";
+			sourceTree = "<group>";
+		};
+		19D80997285C831D0072A27F /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				19D80998285C83300072A27F /* PassthroughWindow.swift */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
 		19E1CD9C284F3F7700E24EBA = {
 			isa = PBXGroup;
 			children = (
@@ -596,6 +625,7 @@
 				19D21D30285399ED00F73F99 /* Reusable */,
 				19E1CDDB284F5B9D00E24EBA /* RootCoordinator.swift */,
 				19E1CDEA284F644700E24EBA /* MainNavigationCoordinator.swift */,
+				19D8098C285C7ADB0072A27F /* ActivityIndicatorCoordinator.swift */,
 				19D21D2C28537F0E00F73F99 /* LoginCoordinator.swift */,
 				19D21D152853442800F73F99 /* ForgotPasswordCoordinator.swift */,
 				19D21D2E2853805700F73F99 /* LaunchListCoordinator.swift */,
@@ -610,6 +640,7 @@
 				19E1CDDE284F5C0000E24EBA /* Session.swift */,
 				190E5B05284FA1E900ABC917 /* Authentication */,
 				190E5B08284FA8DE00ABC917 /* Launches */,
+				19D80991285C7C7D0072A27F /* ActivityIndicatorUC.swift */,
 			);
 			path = "Application Logic";
 			sourceTree = "<group>";
@@ -669,6 +700,7 @@
 				19E1CDF7284F65E700E24EBA /* Resolver+Session.swift */,
 				198246D228579FD1001CD484 /* Resolver+AlertManager.swift */,
 				198246DD28588794001CD484 /* Resolver+Environment.swift */,
+				19D80995285C7FA90072A27F /* Resolver+ActivityIndicator.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -691,10 +723,12 @@
 				19D21D2228535CD100F73F99 /* NavigationRoot.swift */,
 				19CFE8792852346700A1BD80 /* BaseVC.swift */,
 				19D21D2A285372CF00F73F99 /* MainNavigationVC.swift */,
+				19D80997285C831D0072A27F /* Window */,
 				190E5B102850717000ABC917 /* Reusable */,
 				19E1CE03284F84D100E24EBA /* Login */,
 				19D21D172853460700F73F99 /* ForgotPassword */,
 				190E5AFB284F9F1800ABC917 /* Launches */,
+				19D8098E285C7B480072A27F /* Activity Indicator */,
 				19D8097A285B35200072A27F /* Image Caching */,
 			);
 			path = UI;
@@ -854,6 +888,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19E1CE05284F84E500E24EBA /* Login.storyboard in Resources */,
+				19D80994285C7D9D0072A27F /* ActivityIndicator.storyboard in Resources */,
 				19E1CDB5284F3F7900E24EBA /* LaunchScreen.storyboard in Resources */,
 				19D21D1B2853464E00F73F99 /* ForgotPassword.storyboard in Resources */,
 				19E1CDB2284F3F7900E24EBA /* Assets.xcassets in Resources */,
@@ -900,7 +935,9 @@
 				198246DE28588795001CD484 /* Resolver+Environment.swift in Sources */,
 				190E5B02284F9F6300ABC917 /* LaunchListVM.swift in Sources */,
 				190E5B0A284FA93F00ABC917 /* LogoutUC.swift in Sources */,
+				19D8098D285C7ADB0072A27F /* ActivityIndicatorCoordinator.swift in Sources */,
 				19D80975285A4A3E0072A27F /* Constants+Launches.swift in Sources */,
+				19D80999285C83300072A27F /* PassthroughWindow.swift in Sources */,
 				19D80969285A2CEF0072A27F /* LaunchCell.swift in Sources */,
 				19D21D192853462000F73F99 /* ForgotPasswordVC.swift in Sources */,
 				19CFE8692851E54500A1BD80 /* StyledButton.swift in Sources */,
@@ -917,6 +954,7 @@
 				19E1CDDF284F5C0000E24EBA /* Session.swift in Sources */,
 				19E1CDED284F64A300E24EBA /* CoordinatorImpl.swift in Sources */,
 				190E5B07284FA1F600ABC917 /* LoginUC.swift in Sources */,
+				19D80996285C7FA90072A27F /* Resolver+ActivityIndicator.swift in Sources */,
 				19D80984285B88DC0072A27F /* LaunchSectionHeader.swift in Sources */,
 				19D8096D285A2E0F0072A27F /* LaunchDetailCell.swift in Sources */,
 				190E5B0C284FAA6300ABC917 /* Resolver+Logout.swift in Sources */,
@@ -934,7 +972,9 @@
 				19CFE86B2851E56A00A1BD80 /* StyledButton+Style.swift in Sources */,
 				19FF550C2851C8D80098212B /* Double+CGFloat.swift in Sources */,
 				198247042859C416001CD484 /* BaseUC.swift in Sources */,
+				19D80990285C7BF40072A27F /* ActvityIndicatorVC.swift in Sources */,
 				198246D128579CF9001CD484 /* AlertManager.swift in Sources */,
+				19D80992285C7C7D0072A27F /* ActivityIndicatorUC.swift in Sources */,
 				19D80973285A49E00072A27F /* LaunchCell+ReuseId.swift in Sources */,
 				19E1CDFF284F835F00E24EBA /* Constants+Storyboards.swift in Sources */,
 				19E1CDE7284F600500E24EBA /* Constants+User.swift in Sources */,

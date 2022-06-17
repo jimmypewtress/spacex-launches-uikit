@@ -19,6 +19,7 @@ class Resolver {
     lazy var session = SessionResolver(resolver: self)
     lazy var alert = AlertPresenterResolver(resolver: self)
     lazy var environment = EnvironmentResolver(resolver: self)
+    lazy var activityIndicator = ActivityIndicatorResolver(resolver: self)
     
     // MARK: - Network
     lazy var api = APIResolver(resolver: self)

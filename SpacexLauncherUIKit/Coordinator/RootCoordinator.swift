@@ -9,6 +9,7 @@ class RootCoordinator: Coordinator {
     static let shared = RootCoordinator()
     
     let mainNavigation = MainNavigationCoordinator()
+    let activityIndicator = ActivityIndicatorCoordinator()
     
     func start() {
         let r = Resolver()
@@ -17,5 +18,6 @@ class RootCoordinator: Coordinator {
         session.checkUserState()
         
         self.mainNavigation.start()
+        self.activityIndicator.start()
     }
 }

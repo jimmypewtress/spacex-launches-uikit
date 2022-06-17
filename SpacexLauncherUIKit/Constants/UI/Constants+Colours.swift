@@ -35,6 +35,7 @@ extension Constants {
     struct ColourPalette {
         static let white = UIColor.white
         static let clear = UIColor.clear
+        static let black = UIColor.black
         
         static let darkGray = "263238".toColor
         static let lightGray = "F8F7F7".toColor

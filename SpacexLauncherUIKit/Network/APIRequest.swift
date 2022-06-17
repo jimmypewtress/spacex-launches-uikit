@@ -12,10 +12,19 @@ struct APIRequestError: Error { }
 
 class ApiRequest<RnR: RequestAndResponse> {
     private var cancellables: Set<AnyCancellable> = []
-    var network: RawNetwork!
+    
+    private var network: RawNetwork
+    private var activityIndicator: ActivityIndicatorUC
+    
+    init(network: RawNetwork,
+         activityIndicator: ActivityIndicatorUC) {
+        self.network = network
+        self.activityIndicator = activityIndicator
+    }
 
     func fetch(_ requestData: RnR.Request,
-               headers: RnR.Headers) -> Future<RnR.Response, APIRequestError> {
+               headers: RnR.Headers,
+               showSpinner: Bool = true) -> Future<RnR.Response, APIRequestError> {
         return Future() { promise in
             
             guard let rawRequest = RnR.toRawRequest(requestData, headers: headers) else {
@@ -24,7 +33,13 @@ class ApiRequest<RnR: RequestAndResponse> {
                 return
             }
             
+            if showSpinner {
+                self.activityIndicator.showLoader()
+            }
+            
             self.network.makeAsyncRequest(rawRequest).sink { rawResponse in
+                self.activityIndicator.hideLoader()
+                
                 if let networkingError = rawResponse.networkingError {
                     // TODO: handle networking error
                     promise(Result.failure(APIRequestError()))
