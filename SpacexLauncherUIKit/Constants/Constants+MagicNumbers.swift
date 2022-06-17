@@ -20,5 +20,11 @@ extension Constants {
         static let defaultKeyboardOffset = 20.0
         
         static let defaultLaunchCellHeight = 110.0
+        
+        static let launchesFirstIndex = 1
+        static let launchesPageSize = 15
+        static let launchesPrefetchOffset: Int = 4
+        
+        static let launchesHeaderHeight = 32.0
     }
 }

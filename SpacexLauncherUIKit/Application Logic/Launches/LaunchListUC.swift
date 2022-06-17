@@ -10,7 +10,7 @@ import Combine
 protocol LaunchListUC {
     var launchesOutputPublisher: Published<LaunchesOutput?>.Publisher { get }
     
-    func fetchLaunches()
+    func fetchLaunches(currentIndex: Int, pageSize: Int)
 }
 
 class LaunchListUCImpl: BaseUC, LaunchListUC, ObservableObject {
@@ -23,8 +23,10 @@ class LaunchListUCImpl: BaseUC, LaunchListUC, ObservableObject {
         self.launchesRequest = launchesRequest
     }
     
-    func fetchLaunches() {
-        let input = Payload.Launches.Request(query: .init(), options: .init())
+    func fetchLaunches(currentIndex: Int, pageSize: Int) {
+        let requestOptions = LaunchesInputOptions(offset: currentIndex, limit: pageSize)
+        
+        let input = Payload.Launches.Request(query: .init(), options: requestOptions)
         let headers = Payload.Empty()
         
         self.launchesRequest.fetch(input, headers: headers).sink { _ in

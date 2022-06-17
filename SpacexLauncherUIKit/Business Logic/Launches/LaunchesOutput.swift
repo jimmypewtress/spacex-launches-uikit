@@ -17,7 +17,7 @@ struct LaunchesOutput: Codable {
 
 struct Launch: Codable {
     var rocket: Rocket
-    var success: Bool
+    var success: Bool?
     var date: Date
     var links: Links
     

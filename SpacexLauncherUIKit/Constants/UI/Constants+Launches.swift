@@ -11,5 +11,7 @@ extension Constants {
             static let launchDetail = "LaunchDetailCell"
             static let spinner = "LaunchSpinnerCell"
         }
+        
+        static let noUrlImageName = "x.square"
     }
 }

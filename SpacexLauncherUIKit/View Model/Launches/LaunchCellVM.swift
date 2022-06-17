@@ -7,18 +7,25 @@
 
 import Foundation
 
-struct LaunchCellVM {
+struct LaunchCellVM: Equatable {
     let rocketName: String
     let success: String
-    let date: String
+    let date: Date
+    let dateString: String
     let patchUrl: String?
 }
 
 extension LaunchCellVM {
     init (_ launch: Launch) {
         self.rocketName = launch.rocket.name
-        self.success = String(launch.success)
-        self.date = "Date here"
+        self.date = launch.date
+        self.dateString = DateFormatter.dayMonthYear.string(from: launch.date)
         self.patchUrl = launch.links.patch.small
+        
+        if let success = launch.success {
+            self.success = String(success)
+        } else {
+            self.success = Constants.Strings.General.unknown
+        }
     }
 }

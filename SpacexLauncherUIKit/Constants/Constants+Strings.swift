@@ -11,10 +11,12 @@ extension Constants {
     struct Strings {
         struct General {
             static let login = NSLocalizedString("Login", comment: "Login")
+            static let logout = NSLocalizedString("Logout", comment: "Logout")
             static let email = NSLocalizedString("Email", comment: "Email")
             static let password = NSLocalizedString("Password", comment: "Password")
             static let cancel = NSLocalizedString("Cancel", comment: "Cancel")
             static let ok = NSLocalizedString("OK", comment: "OK")
+            static let unknown = NSLocalizedString("Unknown", comment: "Unknown")
         }
         struct Login {
             static let subHeading = NSLocalizedString("Enter your email and password", comment: "Subheading on Login Screen")
