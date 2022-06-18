@@ -12,20 +12,10 @@ class BaseVC: UIViewController, KeyboardDismissable {
     var cancellables: Set<AnyCancellable> = []
     
     // Keyboard Dismissable
-    var tapDismissesKeyboard: Bool {
-        return true
-    }
+    var tapDismissesKeyboard: Bool = true
     
     // TODO: is there a way to handle gestures with Combine?
     lazy var keyboardDismissRecognizer: UITapGestureRecognizer? = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        if let tap = self.keyboardDismissRecognizer {
-            self.view.addGestureRecognizer(tap)
-        }
-    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -45,6 +35,11 @@ class BaseVC: UIViewController, KeyboardDismissable {
     }
     
     func setupKeyboardEventHandling() {
+        if self.tapDismissesKeyboard,
+           let tap = self.keyboardDismissRecognizer {
+            self.view.addGestureRecognizer(tap)
+        }
+        
         NotificationCenter.default
                 .publisher(for: UIApplication.keyboardWillChangeFrameNotification)
                 .sink(receiveValue: { notification in

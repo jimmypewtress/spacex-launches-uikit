@@ -43,6 +43,8 @@ class LaunchListVC: BaseVC {
     }
     
     private func configureUI() {
+        self.tapDismissesKeyboard = false
+        
         self.navigationItem.title = Constants.Strings.Launches.navbarTitle
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: Constants.Strings.General.logout,
                                                                  style: .plain,
@@ -119,5 +121,15 @@ extension LaunchListVC: UITableViewDataSource, UITableViewDelegate, UITableViewD
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.cellForRow(at: indexPath)?.setSelected(false, animated: true)
+        
+        let section = self.viewModel.tableSections[indexPath.section]
+        
+        if let selectedRow = self.viewModel.tableRows[section]?[indexPath.row] {
+            self.viewModel.didSelectRow(selectedRow)
+        }
     }
 }

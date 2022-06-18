@@ -13,6 +13,7 @@ struct LaunchCellVM: Equatable {
     let date: Date
     let dateString: String
     let patchUrl: String?
+    let id: String
 }
 
 extension LaunchCellVM {
@@ -21,6 +22,7 @@ extension LaunchCellVM {
         self.date = launch.date
         self.dateString = DateFormatter.dayMonthYear.string(from: launch.date)
         self.patchUrl = launch.links.patch.small
+        self.id = launch.id
         
         if let success = launch.success {
             self.success = String(success)

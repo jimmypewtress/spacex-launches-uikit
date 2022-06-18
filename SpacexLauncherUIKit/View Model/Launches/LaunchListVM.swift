@@ -16,6 +16,8 @@ protocol LaunchListVM {
     
     func logoutButtonTapped()
     func fetchData(isRefresh: Bool)
+    
+    func didSelectRow(_ row: LaunchRow)
 }
 
 enum LaunchRow: Equatable {
@@ -32,6 +34,7 @@ class LaunchListVMImpl: BaseVM, LaunchListVM, ObservableObject {
     
     private let uc: LaunchListUC
     private let logoutUC: LogoutUC
+    private let detailCoordinator: NavigationCoordinatorOf<LaunchDetailVMInput>
     
     private var isRefreshingList = false
     private var isEndOfTheList = false
@@ -47,9 +50,11 @@ class LaunchListVMImpl: BaseVM, LaunchListVM, ObservableObject {
     private var pageSize = Constants.MagicNumbers.launchesPageSize
     
     init(uc: LaunchListUC,
-         logoutUC: LogoutUC) {
+         logoutUC: LogoutUC,
+         detailCoordinator: NavigationCoordinatorOf<LaunchDetailVMInput>) {
         self.uc = uc
         self.logoutUC = logoutUC
+        self.detailCoordinator = detailCoordinator
         
         super.init()
         
@@ -140,5 +145,11 @@ class LaunchListVMImpl: BaseVM, LaunchListVM, ObservableObject {
         self.uc.fetchLaunches(currentIndex: self.currentIndex,
                               pageSize: self.pageSize,
                               showSpinner: showSpinner)
+    }
+    
+    func didSelectRow(_ row: LaunchRow) {
+        if case .cell(let model) = row {
+            self.detailCoordinator.start(LaunchDetailVMInput(id: model.id))
+        }
     }
 }

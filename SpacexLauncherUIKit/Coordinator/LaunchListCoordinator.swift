@@ -7,6 +7,8 @@
 
 class LaunchListCoordinator: NavigationCoordinator {
     override func onStart(_ obj: Void, r: Resolver = Resolver()) {
+        r.launchList.input = .init(detailCoordinator: LaunchDetailCoordinator(navigationViewController: self.navigationViewController))
+        
         let vc = r.launchList.vc
         
         self.navigationViewController?.pushViewController(vc, animated: false)

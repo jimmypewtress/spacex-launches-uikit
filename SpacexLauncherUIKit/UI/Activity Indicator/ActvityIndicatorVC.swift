@@ -17,7 +17,7 @@ class ActivityIndicatorVC: BaseVC {
         }
     }
 
-    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var containerView: UIView?
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -27,17 +27,17 @@ class ActivityIndicatorVC: BaseVC {
     }
     
     private func configureUI() {
-        self.containerView.alpha = 0
-        self.containerView.layer.masksToBounds = true
-        self.containerView.layer.cornerRadius = Constants.MagicNumbers.defaultCornerRadius.cgFloat
-        self.containerView.backgroundColor = Constants.ColourPalette.black.withAlphaComponent(0.7)
+        self.containerView?.alpha = 0
+        self.containerView?.layer.masksToBounds = true
+        self.containerView?.layer.cornerRadius = Constants.MagicNumbers.defaultCornerRadius.cgFloat
+        self.containerView?.backgroundColor = Constants.ColourPalette.black.withAlphaComponent(0.7)
     }
     
     override func subscribe() {
         self.useCase.isShownPublisher.sink { isShown in
             UIView.animate(withDuration: Constants.MagicNumbers.defaultAnimationDuration, delay: 0) {
                 DispatchQueue.main.async {
-                    self.containerView.alpha = isShown ? 1 : 0
+                    self.containerView?.alpha = isShown ? 1 : 0
                 }
             }
         }.store(in: &cancellables)
