@@ -26,14 +26,12 @@ class ActivityIndicatorUCImpl: BaseUC, ActivityIndicatorUC, ObservableObject {
             }
         }
     }
-    func reset() {
-        counter = 0
-    }
+    
     func showLoader() {
         counter += 1
     }
     
     func hideLoader() {
-        counter = max(counter-1, 0)
+        counter = max(counter - 1, 0)
     }
 }

@@ -5,7 +5,7 @@
 //  Created by Jimmy Pewtress on 17/06/2022.
 //
 
-struct AppError {
+struct AppError: Equatable {
     let title: String
     let message: String
     

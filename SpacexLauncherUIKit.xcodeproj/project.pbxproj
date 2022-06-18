@@ -20,6 +20,8 @@
 		190E5B172850766800ABC917 /* Constants+Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E5B162850766800ABC917 /* Constants+Colours.swift */; };
 		190E5B1A2850770D00ABC917 /* String+Colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E5B192850770D00ABC917 /* String+Colour.swift */; };
 		190E5B1C28507D1600ABC917 /* StyledRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E5B1B28507D1600ABC917 /* StyledRootView.swift */; };
+		196B4C1A285DDA2F004DFF69 /* RawNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B4C19285DDA2F004DFF69 /* RawNetworkTests.swift */; };
+		196B4C1D285DDB1D004DFF69 /* MockedEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B4C1C285DDB1D004DFF69 /* MockedEnvironment.swift */; };
 		198246D128579CF9001CD484 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198246D028579CF9001CD484 /* AlertManager.swift */; };
 		198246D328579FD1001CD484 /* Resolver+AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198246D228579FD1001CD484 /* Resolver+AlertManager.swift */; };
 		198246D52857A2CD001CD484 /* MockedAlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198246D42857A2CD001CD484 /* MockedAlertPresenter.swift */; };
@@ -92,6 +94,8 @@
 		19D8099F285CCEDD0072A27F /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8099E285CCEDD0072A27F /* AppError.swift */; };
 		19D809A1285CD0210072A27F /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D809A0285CD0210072A27F /* Global.swift */; };
 		19D809A3285CD0A40072A27F /* Resolver+ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D809A2285CD0A40072A27F /* Resolver+ErrorHandler.swift */; };
+		19D809A5285DC0240072A27F /* MockedRawNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D809A4285DC0240072A27F /* MockedRawNetwork.swift */; };
+		19D809A8285DC59B0072A27F /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D809A7285DC59B0072A27F /* APITests.swift */; };
 		19E1CDA9284F3F7700E24EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CDA8284F3F7700E24EBA /* AppDelegate.swift */; };
 		19E1CDAB284F3F7700E24EBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CDAA284F3F7700E24EBA /* SceneDelegate.swift */; };
 		19E1CDB2284F3F7900E24EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E1CDB1284F3F7900E24EBA /* Assets.xcassets */; };
@@ -156,6 +160,8 @@
 		190E5B162850766800ABC917 /* Constants+Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Colours.swift"; sourceTree = "<group>"; };
 		190E5B192850770D00ABC917 /* String+Colour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Colour.swift"; sourceTree = "<group>"; };
 		190E5B1B28507D1600ABC917 /* StyledRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledRootView.swift; sourceTree = "<group>"; };
+		196B4C19285DDA2F004DFF69 /* RawNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawNetworkTests.swift; sourceTree = "<group>"; };
+		196B4C1C285DDB1D004DFF69 /* MockedEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedEnvironment.swift; sourceTree = "<group>"; };
 		198246D028579CF9001CD484 /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		198246D228579FD1001CD484 /* Resolver+AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+AlertManager.swift"; sourceTree = "<group>"; };
 		198246D42857A2CD001CD484 /* MockedAlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedAlertPresenter.swift; sourceTree = "<group>"; };
@@ -229,6 +235,8 @@
 		19D8099E285CCEDD0072A27F /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		19D809A0285CD0210072A27F /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		19D809A2285CD0A40072A27F /* Resolver+ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+ErrorHandler.swift"; sourceTree = "<group>"; };
+		19D809A4285DC0240072A27F /* MockedRawNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedRawNetwork.swift; sourceTree = "<group>"; };
+		19D809A7285DC59B0072A27F /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
 		19E1CDA5284F3F7700E24EBA /* SpacexLauncherUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpacexLauncherUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E1CDA8284F3F7700E24EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19E1CDAA284F3F7700E24EBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -376,6 +384,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		196B4C1B285DDB09004DFF69 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				196B4C1C285DDB1D004DFF69 /* MockedEnvironment.swift */,
+				19D809A4285DC0240072A27F /* MockedRawNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		198246D628587EDE001CD484 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -472,6 +489,7 @@
 		19CCCC122857307D0015DC2B /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				196B4C1B285DDB09004DFF69 /* Network */,
 				19CCCC182857393B0015DC2B /* MockedNavigationCoordinator.swift */,
 				198246D42857A2CD001CD484 /* MockedAlertPresenter.swift */,
 				19CCCC17285738970015DC2B /* UC */,
@@ -586,6 +604,15 @@
 			path = General;
 			sourceTree = "<group>";
 		};
+		19D809A6285DC5180072A27F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				196B4C19285DDA2F004DFF69 /* RawNetworkTests.swift */,
+				19D809A7285DC59B0072A27F /* APITests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		19E1CD9C284F3F7700E24EBA = {
 			isa = PBXGroup;
 			children = (
@@ -631,6 +658,7 @@
 			children = (
 				19CCCC13285732BD0015DC2B /* TestCase.swift */,
 				19CCCC122857307D0015DC2B /* Mocks */,
+				19D809A6285DC5180072A27F /* Network */,
 				19CCCC0F28572FD10015DC2B /* VM */,
 			);
 			path = SpacexLauncherUIKitTests;
@@ -1053,11 +1081,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D809A5285DC0240072A27F /* MockedRawNetwork.swift in Sources */,
 				19CCCC1D28577B090015DC2B /* ForgotPasswordVMTests.swift in Sources */,
+				19D809A8285DC59B0072A27F /* APITests.swift in Sources */,
 				198246D52857A2CD001CD484 /* MockedAlertPresenter.swift in Sources */,
 				19CCCC112857304D0015DC2B /* LoginVMTests.swift in Sources */,
+				196B4C1A285DDA2F004DFF69 /* RawNetworkTests.swift in Sources */,
 				19CCCC192857393B0015DC2B /* MockedNavigationCoordinator.swift in Sources */,
 				19CCCC16285735150015DC2B /* MockedLoginUC.swift in Sources */,
+				196B4C1D285DDB1D004DFF69 /* MockedEnvironment.swift in Sources */,
 				19CCCC1B285779E70015DC2B /* MockedForgotPasswordUC.swift in Sources */,
 				19CCCC14285732BD0015DC2B /* TestCase.swift in Sources */,
 			);

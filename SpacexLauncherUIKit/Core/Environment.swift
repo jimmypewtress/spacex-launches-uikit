@@ -16,7 +16,16 @@ enum PlistKey: String {
     case flags = "FLAGS"
 }
 
-struct Environment {
+protocol Environment {
+    var environmentName: String { get }
+    var host: String? { get }
+    var port: Int? { get }
+    var basePath: String? { get }
+    var connectionProtocol: String? { get }
+    var flags: String? { get }
+}
+
+struct EnvironmentImpl: Environment {
     private var infoDict: [String: Any] {
         return Bundle.main.infoDictionary ?? [:]
     }

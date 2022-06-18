@@ -7,7 +7,7 @@
 
 extension Constants {
     struct Error {
-        enum Network {
+        enum Network: Equatable {
             case noHostForEndpoint
             case cannotCreateUrl
             case noHttpResponse

@@ -28,7 +28,8 @@ class ApiRequest<RnR: RequestAndResponse> {
         return Future() { promise in
             
             guard let rawRequest = RnR.toRawRequest(requestData, headers: headers) else {
-                // TODO: handle serialisation error
+                Constants.Error.Network.serializationIssue.appError.show()
+                
                 promise(Result.failure(APIRequestError()))
                 return
             }

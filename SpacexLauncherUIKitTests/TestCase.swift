@@ -11,13 +11,49 @@ import Combine
 
 class TestCase: XCTestCase {
     var cancellables: Set<AnyCancellable>!
+    
+    var resetSingletonStorage: Bool = true
+    var resetGlobal: Bool = true
+    var mockNetwork: Bool = true
+    
     var r: Resolver!
+    var network: MockedRawNetwork!
 
     override func setUpWithError() throws {
         try? super.setUpWithError()
         
         self.cancellables = []
+        
+        self.setMockFlags()
+        self.initMocks()
+        
+        if self.resetSingletonStorage {
+            let singleton = SingletonStorage()
+            SingletonStorage.shared = singleton
+        }
+
+        setupResolver()
+        
+        if self.resetGlobal {
+            let global = Global()
+            Global.shared = global
+        }
+    }
+    
+    func setMockFlags() {
+        // override if we need to switch any flags
+    }
+    
+    func initMocks() {
+        self.network = .init()
+    }
+    
+    func setupResolver() {
         self.r = Resolver()
+        
+        if self.mockNetwork {
+            self.r.api.network = self.network
+        }
     }
 
     override func tearDownWithError() throws {
@@ -25,20 +61,7 @@ class TestCase: XCTestCase {
         
         self.cancellables = []
         self.r = nil
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+        
+        self.network = nil
     }
 }
