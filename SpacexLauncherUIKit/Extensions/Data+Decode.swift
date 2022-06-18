@@ -22,3 +22,10 @@ extension Data {
         return nil
     }
 }
+
+extension String {
+    func decode<Type>() -> Type? where Type: Decodable {
+        let data = Data(self.utf8)
+        return data.decode()
+    }
+}

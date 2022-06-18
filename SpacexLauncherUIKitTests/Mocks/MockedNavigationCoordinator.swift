@@ -13,7 +13,7 @@ class MockedNavigationCoordinator: NavigationCoordinator {
         self.init(navigationViewController: nil)
     }
     
-    var callback: (() -> Void)?
+    var callback: Callback?
     
     override func onStart(_ obj: Void, r: Resolver) {
         self.callback?()

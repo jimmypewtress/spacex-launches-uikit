@@ -30,6 +30,9 @@
 		196B4C2B285E0B6F004DFF69 /* LaunchDetailVMInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B4C2A285E0B6F004DFF69 /* LaunchDetailVMInput.swift */; };
 		196B4C2D285E0FCB004DFF69 /* LaunchDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B4C2C285E0FCB004DFF69 /* LaunchDetailCoordinator.swift */; };
 		196B4C30285E10EB004DFF69 /* PopCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B4C2F285E10EB004DFF69 /* PopCoordinator.swift */; };
+		196B4C32285E21ED004DFF69 /* MockedLaunchListUC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B4C31285E21ED004DFF69 /* MockedLaunchListUC.swift */; };
+		196B4C34285E23A6004DFF69 /* LuanchListVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B4C33285E23A6004DFF69 /* LuanchListVMTests.swift */; };
+		196B4C36285E24E6004DFF69 /* MockedCoordinatorOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B4C35285E24E6004DFF69 /* MockedCoordinatorOf.swift */; };
 		198246D128579CF9001CD484 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198246D028579CF9001CD484 /* AlertManager.swift */; };
 		198246D328579FD1001CD484 /* Resolver+AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198246D228579FD1001CD484 /* Resolver+AlertManager.swift */; };
 		198246D52857A2CD001CD484 /* MockedAlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198246D42857A2CD001CD484 /* MockedAlertPresenter.swift */; };
@@ -129,6 +132,11 @@
 		19E1CE05284F84E500E24EBA /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19E1CE04284F84E500E24EBA /* Login.storyboard */; };
 		19E1CE09284F85F900E24EBA /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CE08284F85F900E24EBA /* LoginVM.swift */; };
 		19E1CE0B284F87B900E24EBA /* Resolver+Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1CE0A284F87B900E24EBA /* Resolver+Login.swift */; };
+		19EA4D7F285E290E00DE3D19 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D7E285E290E00DE3D19 /* Sample.swift */; };
+		19EA4D81285E293E00DE3D19 /* SampleLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D80285E293E00DE3D19 /* SampleLaunch.swift */; };
+		19EA4D84285E2A0F00DE3D19 /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D83285E2A0F00DE3D19 /* TestUtils.swift */; };
+		19EA4D88285E32D400DE3D19 /* SampleLaunches.json in Resources */ = {isa = PBXBuildFile; fileRef = 19EA4D87285E32D400DE3D19 /* SampleLaunches.json */; };
+		19EA4D8A285E460300DE3D19 /* MockedLogoutUC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D89285E460300DE3D19 /* MockedLogoutUC.swift */; };
 		19FF55022851BF680098212B /* StyledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF55012851BF680098212B /* StyledTextField.swift */; };
 		19FF55062851C06E0098212B /* StyledLabel+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF55052851C06E0098212B /* StyledLabel+Style.swift */; };
 		19FF55082851C0B80098212B /* StyledTextField+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF55072851C0B80098212B /* StyledTextField+Style.swift */; };
@@ -178,6 +186,9 @@
 		196B4C2A285E0B6F004DFF69 /* LaunchDetailVMInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailVMInput.swift; sourceTree = "<group>"; };
 		196B4C2C285E0FCB004DFF69 /* LaunchDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailCoordinator.swift; sourceTree = "<group>"; };
 		196B4C2F285E10EB004DFF69 /* PopCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopCoordinator.swift; sourceTree = "<group>"; };
+		196B4C31285E21ED004DFF69 /* MockedLaunchListUC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedLaunchListUC.swift; sourceTree = "<group>"; };
+		196B4C33285E23A6004DFF69 /* LuanchListVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuanchListVMTests.swift; sourceTree = "<group>"; };
+		196B4C35285E24E6004DFF69 /* MockedCoordinatorOf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedCoordinatorOf.swift; sourceTree = "<group>"; };
 		198246D028579CF9001CD484 /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		198246D228579FD1001CD484 /* Resolver+AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+AlertManager.swift"; sourceTree = "<group>"; };
 		198246D42857A2CD001CD484 /* MockedAlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedAlertPresenter.swift; sourceTree = "<group>"; };
@@ -282,6 +293,11 @@
 		19E1CE04284F84E500E24EBA /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		19E1CE08284F85F900E24EBA /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		19E1CE0A284F87B900E24EBA /* Resolver+Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+Login.swift"; sourceTree = "<group>"; };
+		19EA4D7E285E290E00DE3D19 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
+		19EA4D80285E293E00DE3D19 /* SampleLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLaunch.swift; sourceTree = "<group>"; };
+		19EA4D83285E2A0F00DE3D19 /* TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
+		19EA4D87285E32D400DE3D19 /* SampleLaunches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleLaunches.json; sourceTree = "<group>"; };
+		19EA4D89285E460300DE3D19 /* MockedLogoutUC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedLogoutUC.swift; sourceTree = "<group>"; };
 		19FF55012851BF680098212B /* StyledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledTextField.swift; sourceTree = "<group>"; };
 		19FF55052851C06E0098212B /* StyledLabel+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StyledLabel+Style.swift"; sourceTree = "<group>"; };
 		19FF55072851C0B80098212B /* StyledTextField+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StyledTextField+Style.swift"; sourceTree = "<group>"; };
@@ -519,6 +535,7 @@
 			children = (
 				19CCCC102857304D0015DC2B /* LoginVMTests.swift */,
 				19CCCC1C28577B090015DC2B /* ForgotPasswordVMTests.swift */,
+				196B4C33285E23A6004DFF69 /* LuanchListVMTests.swift */,
 			);
 			path = VM;
 			sourceTree = "<group>";
@@ -528,6 +545,7 @@
 			children = (
 				196B4C1B285DDB09004DFF69 /* Network */,
 				19CCCC182857393B0015DC2B /* MockedNavigationCoordinator.swift */,
+				196B4C35285E24E6004DFF69 /* MockedCoordinatorOf.swift */,
 				198246D42857A2CD001CD484 /* MockedAlertPresenter.swift */,
 				19CCCC17285738970015DC2B /* UC */,
 			);
@@ -538,7 +556,9 @@
 			isa = PBXGroup;
 			children = (
 				19CCCC15285735150015DC2B /* MockedLoginUC.swift */,
+				19EA4D89285E460300DE3D19 /* MockedLogoutUC.swift */,
 				19CCCC1A285779E70015DC2B /* MockedForgotPasswordUC.swift */,
+				196B4C31285E21ED004DFF69 /* MockedLaunchListUC.swift */,
 			);
 			path = UC;
 			sourceTree = "<group>";
@@ -695,7 +715,9 @@
 			isa = PBXGroup;
 			children = (
 				19CCCC13285732BD0015DC2B /* TestCase.swift */,
+				19EA4D82285E29F000DE3D19 /* Utils */,
 				19CCCC122857307D0015DC2B /* Mocks */,
+				19EA4D7D285E28E800DE3D19 /* Sample Data */,
 				19D809A6285DC5180072A27F /* Network */,
 				19CCCC0F28572FD10015DC2B /* VM */,
 			);
@@ -859,6 +881,24 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		19EA4D7D285E28E800DE3D19 /* Sample Data */ = {
+			isa = PBXGroup;
+			children = (
+				19EA4D7E285E290E00DE3D19 /* Sample.swift */,
+				19EA4D80285E293E00DE3D19 /* SampleLaunch.swift */,
+				19EA4D87285E32D400DE3D19 /* SampleLaunches.json */,
+			);
+			path = "Sample Data";
+			sourceTree = "<group>";
+		};
+		19EA4D82285E29F000DE3D19 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				19EA4D83285E2A0F00DE3D19 /* TestUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		19FF55032851C0260098212B /* Label */ = {
 			isa = PBXGroup;
 			children = (
@@ -997,6 +1037,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19EA4D88285E32D400DE3D19 /* SampleLaunches.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1134,11 +1175,18 @@
 				19D809A8285DC59B0072A27F /* APITests.swift in Sources */,
 				198246D52857A2CD001CD484 /* MockedAlertPresenter.swift in Sources */,
 				19CCCC112857304D0015DC2B /* LoginVMTests.swift in Sources */,
+				196B4C34285E23A6004DFF69 /* LuanchListVMTests.swift in Sources */,
 				196B4C1A285DDA2F004DFF69 /* RawNetworkTests.swift in Sources */,
 				19CCCC192857393B0015DC2B /* MockedNavigationCoordinator.swift in Sources */,
+				19EA4D84285E2A0F00DE3D19 /* TestUtils.swift in Sources */,
 				19CCCC16285735150015DC2B /* MockedLoginUC.swift in Sources */,
+				19EA4D8A285E460300DE3D19 /* MockedLogoutUC.swift in Sources */,
 				196B4C1D285DDB1D004DFF69 /* MockedEnvironment.swift in Sources */,
+				19EA4D81285E293E00DE3D19 /* SampleLaunch.swift in Sources */,
+				19EA4D7F285E290E00DE3D19 /* Sample.swift in Sources */,
+				196B4C32285E21ED004DFF69 /* MockedLaunchListUC.swift in Sources */,
 				19CCCC1B285779E70015DC2B /* MockedForgotPasswordUC.swift in Sources */,
+				196B4C36285E24E6004DFF69 /* MockedCoordinatorOf.swift in Sources */,
 				19CCCC14285732BD0015DC2B /* TestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

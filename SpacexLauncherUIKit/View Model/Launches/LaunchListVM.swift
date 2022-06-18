@@ -132,8 +132,6 @@ class LaunchListVMImpl: BaseVM, LaunchListVM, ObservableObject {
         
         if !self.isEndOfTheList {
             self.getLaunches(showSpinner: isRefresh)
-        } else {
-            self.isFetching = false
         }
     }
     

@@ -23,7 +23,7 @@ extension Constants {
         static let defaultLaunchCellHeight = 110.0
         
         static let launchesFirstIndex = 1
-        static let launchesPageSize = 15
+        static let launchesPageSize = 10
         static let launchesPrefetchOffset: Int = 4
         
         static let launchesHeaderHeight = 32.0
