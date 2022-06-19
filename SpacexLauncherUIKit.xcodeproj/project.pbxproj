@@ -137,6 +137,7 @@
 		19EA4D84285E2A0F00DE3D19 /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D83285E2A0F00DE3D19 /* TestUtils.swift */; };
 		19EA4D88285E32D400DE3D19 /* SampleLaunches.json in Resources */ = {isa = PBXBuildFile; fileRef = 19EA4D87285E32D400DE3D19 /* SampleLaunches.json */; };
 		19EA4D8A285E460300DE3D19 /* MockedLogoutUC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D89285E460300DE3D19 /* MockedLogoutUC.swift */; };
+		19EA4D8C285EEDDC00DE3D19 /* LaunchCellVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D8B285EEDDC00DE3D19 /* LaunchCellVMTests.swift */; };
 		19FF55022851BF680098212B /* StyledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF55012851BF680098212B /* StyledTextField.swift */; };
 		19FF55062851C06E0098212B /* StyledLabel+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF55052851C06E0098212B /* StyledLabel+Style.swift */; };
 		19FF55082851C0B80098212B /* StyledTextField+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF55072851C0B80098212B /* StyledTextField+Style.swift */; };
@@ -298,6 +299,7 @@
 		19EA4D83285E2A0F00DE3D19 /* TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
 		19EA4D87285E32D400DE3D19 /* SampleLaunches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleLaunches.json; sourceTree = "<group>"; };
 		19EA4D89285E460300DE3D19 /* MockedLogoutUC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedLogoutUC.swift; sourceTree = "<group>"; };
+		19EA4D8B285EEDDC00DE3D19 /* LaunchCellVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCellVMTests.swift; sourceTree = "<group>"; };
 		19FF55012851BF680098212B /* StyledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledTextField.swift; sourceTree = "<group>"; };
 		19FF55052851C06E0098212B /* StyledLabel+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StyledLabel+Style.swift"; sourceTree = "<group>"; };
 		19FF55072851C0B80098212B /* StyledTextField+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StyledTextField+Style.swift"; sourceTree = "<group>"; };
@@ -536,6 +538,7 @@
 				19CCCC102857304D0015DC2B /* LoginVMTests.swift */,
 				19CCCC1C28577B090015DC2B /* ForgotPasswordVMTests.swift */,
 				196B4C33285E23A6004DFF69 /* LuanchListVMTests.swift */,
+				19EA4D8B285EEDDC00DE3D19 /* LaunchCellVMTests.swift */,
 			);
 			path = VM;
 			sourceTree = "<group>";
@@ -1180,6 +1183,7 @@
 				19CCCC192857393B0015DC2B /* MockedNavigationCoordinator.swift in Sources */,
 				19EA4D84285E2A0F00DE3D19 /* TestUtils.swift in Sources */,
 				19CCCC16285735150015DC2B /* MockedLoginUC.swift in Sources */,
+				19EA4D8C285EEDDC00DE3D19 /* LaunchCellVMTests.swift in Sources */,
 				19EA4D8A285E460300DE3D19 /* MockedLogoutUC.swift in Sources */,
 				196B4C1D285DDB1D004DFF69 /* MockedEnvironment.swift in Sources */,
 				19EA4D81285E293E00DE3D19 /* SampleLaunch.swift in Sources */,

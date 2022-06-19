@@ -25,7 +25,7 @@ extension LaunchCellVM {
         self.id = launch.id
         
         if let success = launch.success {
-            self.success = String(success)
+            self.success = String(success).capitalized
         } else {
             self.success = Constants.Strings.General.unknown
         }
