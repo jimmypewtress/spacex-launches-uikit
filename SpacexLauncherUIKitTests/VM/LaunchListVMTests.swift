@@ -1,5 +1,5 @@
 //
-//  LuanchListVMTests.swift
+//  LaunchListVMTests.swift
 //  SpacexLauncherUIKitTests
 //
 //  Created by Jimmy Pewtress on 18/06/2022.
@@ -8,7 +8,7 @@
 import XCTest
 @testable import SpacexLauncherUIKit
 
-class LuanchListVMTests: TestCase {
+class LaunchListVMTests: TestCase {
     
     var sut: LaunchListVM!
     var uc: MockedLaunchListUC!
