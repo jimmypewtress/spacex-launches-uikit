@@ -139,6 +139,8 @@
 		19EA4D8A285E460300DE3D19 /* MockedLogoutUC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D89285E460300DE3D19 /* MockedLogoutUC.swift */; };
 		19EA4D8C285EEDDC00DE3D19 /* LaunchCellVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D8B285EEDDC00DE3D19 /* LaunchCellVMTests.swift */; };
 		19EA4D8F285EF58400DE3D19 /* LaunchListUCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D8E285EF58400DE3D19 /* LaunchListUCTests.swift */; };
+		19EA4D93285EFE9600DE3D19 /* LoginUCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D92285EFE9600DE3D19 /* LoginUCTests.swift */; };
+		19EA4D95285F006500DE3D19 /* LogoutUCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D94285F006500DE3D19 /* LogoutUCTests.swift */; };
 		19FF55022851BF680098212B /* StyledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF55012851BF680098212B /* StyledTextField.swift */; };
 		19FF55062851C06E0098212B /* StyledLabel+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF55052851C06E0098212B /* StyledLabel+Style.swift */; };
 		19FF55082851C0B80098212B /* StyledTextField+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF55072851C0B80098212B /* StyledTextField+Style.swift */; };
@@ -302,6 +304,8 @@
 		19EA4D89285E460300DE3D19 /* MockedLogoutUC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedLogoutUC.swift; sourceTree = "<group>"; };
 		19EA4D8B285EEDDC00DE3D19 /* LaunchCellVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCellVMTests.swift; sourceTree = "<group>"; };
 		19EA4D8E285EF58400DE3D19 /* LaunchListUCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListUCTests.swift; sourceTree = "<group>"; };
+		19EA4D92285EFE9600DE3D19 /* LoginUCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUCTests.swift; sourceTree = "<group>"; };
+		19EA4D94285F006500DE3D19 /* LogoutUCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutUCTests.swift; sourceTree = "<group>"; };
 		19FF55012851BF680098212B /* StyledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledTextField.swift; sourceTree = "<group>"; };
 		19FF55052851C06E0098212B /* StyledLabel+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StyledLabel+Style.swift"; sourceTree = "<group>"; };
 		19FF55072851C0B80098212B /* StyledTextField+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StyledTextField+Style.swift"; sourceTree = "<group>"; };
@@ -548,10 +552,10 @@
 		19CCCC122857307D0015DC2B /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				196B4C1B285DDB09004DFF69 /* Network */,
 				19CCCC182857393B0015DC2B /* MockedNavigationCoordinator.swift */,
 				196B4C35285E24E6004DFF69 /* MockedCoordinatorOf.swift */,
 				198246D42857A2CD001CD484 /* MockedAlertPresenter.swift */,
+				196B4C1B285DDB09004DFF69 /* Network */,
 				19CCCC17285738970015DC2B /* UC */,
 			);
 			path = Mocks;
@@ -909,6 +913,8 @@
 			isa = PBXGroup;
 			children = (
 				19EA4D8E285EF58400DE3D19 /* LaunchListUCTests.swift */,
+				19EA4D92285EFE9600DE3D19 /* LoginUCTests.swift */,
+				19EA4D94285F006500DE3D19 /* LogoutUCTests.swift */,
 			);
 			path = "Application Logic";
 			sourceTree = "<group>";
@@ -1190,10 +1196,12 @@
 				198246D52857A2CD001CD484 /* MockedAlertPresenter.swift in Sources */,
 				19CCCC112857304D0015DC2B /* LoginVMTests.swift in Sources */,
 				196B4C34285E23A6004DFF69 /* LuanchListVMTests.swift in Sources */,
+				19EA4D93285EFE9600DE3D19 /* LoginUCTests.swift in Sources */,
 				196B4C1A285DDA2F004DFF69 /* RawNetworkTests.swift in Sources */,
 				19CCCC192857393B0015DC2B /* MockedNavigationCoordinator.swift in Sources */,
 				19EA4D84285E2A0F00DE3D19 /* TestUtils.swift in Sources */,
 				19CCCC16285735150015DC2B /* MockedLoginUC.swift in Sources */,
+				19EA4D95285F006500DE3D19 /* LogoutUCTests.swift in Sources */,
 				19EA4D8C285EEDDC00DE3D19 /* LaunchCellVMTests.swift in Sources */,
 				19EA4D8A285E460300DE3D19 /* MockedLogoutUC.swift in Sources */,
 				19EA4D8F285EF58400DE3D19 /* LaunchListUCTests.swift in Sources */,
