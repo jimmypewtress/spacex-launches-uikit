@@ -138,6 +138,7 @@
 		19EA4D88285E32D400DE3D19 /* SampleLaunches.json in Resources */ = {isa = PBXBuildFile; fileRef = 19EA4D87285E32D400DE3D19 /* SampleLaunches.json */; };
 		19EA4D8A285E460300DE3D19 /* MockedLogoutUC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D89285E460300DE3D19 /* MockedLogoutUC.swift */; };
 		19EA4D8C285EEDDC00DE3D19 /* LaunchCellVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D8B285EEDDC00DE3D19 /* LaunchCellVMTests.swift */; };
+		19EA4D8F285EF58400DE3D19 /* LaunchListUCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D8E285EF58400DE3D19 /* LaunchListUCTests.swift */; };
 		19FF55022851BF680098212B /* StyledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF55012851BF680098212B /* StyledTextField.swift */; };
 		19FF55062851C06E0098212B /* StyledLabel+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF55052851C06E0098212B /* StyledLabel+Style.swift */; };
 		19FF55082851C0B80098212B /* StyledTextField+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF55072851C0B80098212B /* StyledTextField+Style.swift */; };
@@ -300,6 +301,7 @@
 		19EA4D87285E32D400DE3D19 /* SampleLaunches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleLaunches.json; sourceTree = "<group>"; };
 		19EA4D89285E460300DE3D19 /* MockedLogoutUC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedLogoutUC.swift; sourceTree = "<group>"; };
 		19EA4D8B285EEDDC00DE3D19 /* LaunchCellVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCellVMTests.swift; sourceTree = "<group>"; };
+		19EA4D8E285EF58400DE3D19 /* LaunchListUCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListUCTests.swift; sourceTree = "<group>"; };
 		19FF55012851BF680098212B /* StyledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledTextField.swift; sourceTree = "<group>"; };
 		19FF55052851C06E0098212B /* StyledLabel+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StyledLabel+Style.swift"; sourceTree = "<group>"; };
 		19FF55072851C0B80098212B /* StyledTextField+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StyledTextField+Style.swift"; sourceTree = "<group>"; };
@@ -723,6 +725,7 @@
 				19EA4D7D285E28E800DE3D19 /* Sample Data */,
 				19D809A6285DC5180072A27F /* Network */,
 				19CCCC0F28572FD10015DC2B /* VM */,
+				19EA4D8D285EF56100DE3D19 /* Application Logic */,
 			);
 			path = SpacexLauncherUIKitTests;
 			sourceTree = "<group>";
@@ -900,6 +903,14 @@
 				19EA4D83285E2A0F00DE3D19 /* TestUtils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		19EA4D8D285EF56100DE3D19 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				19EA4D8E285EF58400DE3D19 /* LaunchListUCTests.swift */,
+			);
+			path = "Application Logic";
 			sourceTree = "<group>";
 		};
 		19FF55032851C0260098212B /* Label */ = {
@@ -1185,6 +1196,7 @@
 				19CCCC16285735150015DC2B /* MockedLoginUC.swift in Sources */,
 				19EA4D8C285EEDDC00DE3D19 /* LaunchCellVMTests.swift in Sources */,
 				19EA4D8A285E460300DE3D19 /* MockedLogoutUC.swift in Sources */,
+				19EA4D8F285EF58400DE3D19 /* LaunchListUCTests.swift in Sources */,
 				196B4C1D285DDB1D004DFF69 /* MockedEnvironment.swift in Sources */,
 				19EA4D81285E293E00DE3D19 /* SampleLaunch.swift in Sources */,
 				19EA4D7F285E290E00DE3D19 /* Sample.swift in Sources */,

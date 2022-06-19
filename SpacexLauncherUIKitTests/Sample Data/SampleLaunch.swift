@@ -13,5 +13,6 @@ extension Sample {
         lazy var launchesJson = readFile(fileName: "SampleLaunches")
         lazy var launchesList: LaunchesOutput? = launchesJson.decode()
         lazy var launchesSingle: Launch? = self.launchesList?.launches.first
+        lazy var launchesData: Data? = readFile(fileName: "SampleLaunches").data(using: .utf8)
     }
 }

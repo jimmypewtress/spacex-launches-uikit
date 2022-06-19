@@ -256,4 +256,37 @@ class APITests: TestCase {
 
         waitForExpectations(timeout: 0.1, handler: nil)
     }
+    
+    func testSpinnerIsShown() {
+        let spinnerExpectation = expectation(description: "spinner is shown")
+        
+        r.activityIndicator.uc.isShownPublisher.sink { isShown in
+            if isShown {
+                spinnerExpectation.fulfill()
+            }
+        }.store(in: &cancellables)
+        
+        let request: ApiRequest<Dummy> = r.api.request()
+        
+        request.fetch(dummyInput, headers: .init()).sink { _ in } receiveValue: { _ in }.store(in: &cancellables)
+
+        waitForExpectations(timeout: 0.1, handler: nil)
+    }
+    
+    func testSpinnerIsNotShown() {
+        let spinnerExpectation = expectation(description: "spinner is shown")
+        spinnerExpectation.isInverted = true
+        
+        r.activityIndicator.uc.isShownPublisher.sink { isShown in
+            if isShown {
+                spinnerExpectation.fulfill()
+            }
+        }.store(in: &cancellables)
+        
+        let request: ApiRequest<Dummy> = r.api.request()
+        
+        request.fetch(dummyInput, headers: .init(), showSpinner: false).sink { _ in } receiveValue: { _ in }.store(in: &cancellables)
+
+        waitForExpectations(timeout: 0.1, handler: nil)
+    }
 }
