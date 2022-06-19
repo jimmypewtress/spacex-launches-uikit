@@ -16,6 +16,8 @@ class LoginUCTests: TestCase {
         
         var userStateCounter = 0
         
+        let sut = r.login.uc
+        
         r.session.uc.userStatePublisher.sink { userState in
             userStateCounter += 1
             
@@ -32,7 +34,7 @@ class LoginUCTests: TestCase {
             }
         }.store(in: &cancellables)
         
-        r.login.uc.login(email: "abc@def.com", password: "xyz")
+        sut.login(email: "abc@def.com", password: "xyz")
         
         waitForExpectations(timeout: 0.1)
     }
