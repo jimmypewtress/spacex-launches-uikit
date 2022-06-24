@@ -10,13 +10,13 @@ import XCTest
 
 class LuanchCellVMTests: TestCase {
     let june19th2022 = Date(timeIntervalSince1970: 1655617249)
-    let rocket = Rocket(name: "Falcon 9")
+    let rocket = SingleRocket(name: "Falcon 9")
     let presentlinks = Links(patch: Patch(small: "smallUrl", large: "largeUrl"))
     let nilLinks = Links(patch: Patch(small: nil, large: nil))
     let id = "abc"
     
     func testDataPopulationWithNonOptionalValues() {
-        let launch = Launch(rocket: self.rocket,
+        let launch = ListLaunch(rocket: self.rocket,
                             success: true,
                             date: self.june19th2022,
                             links: self.presentlinks,
@@ -31,7 +31,7 @@ class LuanchCellVMTests: TestCase {
     }
     
     func testSuccessPopulationNonNil() {
-        let launch = Launch(rocket: self.rocket,
+        let launch = ListLaunch(rocket: self.rocket,
                             success: true,
                             date: self.june19th2022,
                             links: self.presentlinks,
@@ -44,7 +44,7 @@ class LuanchCellVMTests: TestCase {
     }
     
     func testSuccessPopulationNil() {
-        let launch = Launch(rocket: self.rocket,
+        let launch = ListLaunch(rocket: self.rocket,
                             success: nil,
                             date: self.june19th2022,
                             links: self.presentlinks,
@@ -57,7 +57,7 @@ class LuanchCellVMTests: TestCase {
     }
     
     func testLinksNonNil() {
-        let launch = Launch(rocket: self.rocket,
+        let launch = ListLaunch(rocket: self.rocket,
                             success: true,
                             date: self.june19th2022,
                             links: self.presentlinks,
@@ -70,7 +70,7 @@ class LuanchCellVMTests: TestCase {
     }
     
     func testLinksNil() {
-        let launch = Launch(rocket: self.rocket,
+        let launch = ListLaunch(rocket: self.rocket,
                             success: true,
                             date: self.june19th2022,
                             links: self.nilLinks,

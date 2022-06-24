@@ -71,11 +71,17 @@ class RawNetworkImpl: RawNetwork {
             return (nil, rawResponse)
         }
         
-        let path = endpointProperties.fullPath
+        let path = String(format: endpointProperties.fullPath, arguments: requestData.endpointParams)
         
         urlComponents.scheme = endpointProperties.connectionProtocol
         urlComponents.host = host
         urlComponents.path = path
+        
+        if let queryItems = requestData.queryItems {
+            urlComponents.queryItems = queryItems.map { (key, value) in
+                URLQueryItem(name: key, value: value)
+            }
+        }
                 
         urlComponents.percentEncodedQuery = urlComponents.percentEncodedQuery?
             .replacingOccurrences(of: "+", with: "%2B")

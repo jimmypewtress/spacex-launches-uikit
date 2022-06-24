@@ -11,7 +11,6 @@ extension Resolver {
     class LaunchDetailResolver: SubResolver {
         struct Input {
             var input: LaunchDetailVMInput!
-            var backCoordinator: NavigationCoordinator!
         }
         
         var input: Input!
@@ -21,11 +20,13 @@ extension Resolver {
         }()
         
         lazy var vm = { [unowned self] () -> LaunchDetailVM in
-            return LaunchDetailVMImpl(uc: self.uc, backCoordinator: input.backCoordinator)
+            return LaunchDetailVMImpl(uc: self.uc, input: self.input.input)
         }()
         
         lazy var uc = { [unowned self] () -> LaunchDetailUC in
-            return LaunchDetailUCImpl()
+            return LaunchDetailUCImpl(launchRequest: self.resolver.api.launch,
+                                      launchpadRequest: self.resolver.api.launchpad,
+                                      rocketRequest: self.resolver.api.rocket)
         }()
     }
 }

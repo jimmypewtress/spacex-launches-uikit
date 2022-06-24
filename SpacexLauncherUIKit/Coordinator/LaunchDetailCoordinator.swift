@@ -7,7 +7,7 @@
 
 class LaunchDetailCoordinator: NavigationCoordinatorOf<LaunchDetailVMInput> {
     override func onStart(_ obj: LaunchDetailVMInput, r: Resolver = Resolver()) {
-        r.launchDetail.input = .init(input: obj, backCoordinator: PopCoordinator(navigationViewController: self.navigationViewController))
+        r.launchDetail.input = .init(input: obj)
         
         let vc = r.launchDetail.vc
         

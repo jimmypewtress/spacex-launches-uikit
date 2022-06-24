@@ -8,15 +8,15 @@
 import Foundation
 
 struct LaunchesOutput: Codable {
-    var launches: [Launch]
+    var launches: [ListLaunch]
     
     private enum CodingKeys: String, CodingKey {
         case launches = "docs"
     }
 }
 
-struct Launch: Codable {
-    var rocket: Rocket
+struct ListLaunch: Codable {
+    var rocket: SingleRocket
     var success: Bool?
     var date: Date
     var links: Links
@@ -31,8 +31,9 @@ struct Launch: Codable {
     }
 }
 
-struct Rocket: Codable {
+struct SingleRocket: Codable {
     var name: String
+    var description: String?
 }
 
 struct Links: Codable {

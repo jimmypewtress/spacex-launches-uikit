@@ -35,9 +35,11 @@ class ActivityIndicatorVC: BaseVC {
     
     override func subscribe() {
         self.useCase.isShownPublisher.sink { isShown in
-            UIView.animate(withDuration: Constants.MagicNumbers.defaultAnimationDuration, delay: 0) {
-                DispatchQueue.main.async {
-                    self.containerView?.alpha = isShown ? 1 : 0
+            DispatchQueue.main.async {
+                UIView.animate(withDuration: Constants.MagicNumbers.defaultAnimationDuration, delay: 0) {
+                    DispatchQueue.main.async {
+                        self.containerView?.alpha = isShown ? 1 : 0
+                    }
                 }
             }
         }.store(in: &cancellables)

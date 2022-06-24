@@ -25,7 +25,7 @@ class ApiRequest<RnR: RequestAndResponse> {
     func fetch(_ requestData: RnR.Request,
                headers: RnR.Headers,
                showSpinner: Bool = true) -> Future<RnR.Response, APIRequestError> {
-        return Future() { promise in
+        return Future<RnR.Response, APIRequestError> { promise in
             
             guard let rawRequest = RnR.toRawRequest(requestData, headers: headers) else {
                 Constants.Error.Network.serializationIssue.appError.show()

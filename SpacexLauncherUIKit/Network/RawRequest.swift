@@ -11,6 +11,8 @@ struct RawRequest {
     var endpoint: Constants.API.Endpoint
     var headers: [String: String]?
     var requestBody: Data?
+    var queryItems: [String: String]?
+    var endpointParams: [String] = []
     
     init(endpoint: Constants.API.Endpoint) {
         self.endpoint = endpoint
@@ -21,9 +23,12 @@ extension RawRequest {
     //  return nil if encoding body or headers fails
     init?(_ payload: Encodable? = nil,
           headers: Encodable? = nil,
+          queryItems: Encodable? = nil,
+          endpointParams: [String] = [],
           endpoint: Constants.API.Endpoint) {
         var requestBody: Data?
         var headerMap: [String: String]?
+        var queryItemsMap: [String: String]?
               
         if let payload = payload {
             if endpoint.httpMethod == .post || endpoint.httpMethod == .put {
@@ -42,8 +47,17 @@ extension RawRequest {
             }
         }
         
+        if let queryItems = queryItems {
+            queryItemsMap = queryItems.encodeToStringDictionary()
+            if queryItemsMap == nil {
+                return nil
+            }
+        }
+        
         self.init(endpoint: endpoint)
         self.requestBody = requestBody
         self.headers = headerMap
+        self.endpointParams = endpointParams
+        self.queryItems = queryItemsMap
     }
 }

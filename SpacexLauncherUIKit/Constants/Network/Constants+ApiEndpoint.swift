@@ -11,18 +11,29 @@ extension Constants {
     struct API {
         enum Endpoint {
             case launches
+            case launch
+            case launchpad
+            case rocket
             
             var route: String {
                 switch self {
                 case .launches:
                     return "/launches/query"
+                case .launch:
+                    return "/launches/%@"
+                case .launchpad:
+                    return "/launchpads/%@"
+                case .rocket:
+                    return "/rockets/%@"
                 }
             }
             
             var httpMethod: HTTPMethod {
                 switch self {
-                default:
+                case .launches:
                     return .post
+                default:
+                    return .get
                 }
             }
         }

@@ -147,7 +147,7 @@ class LaunchListVMImpl: BaseVM, LaunchListVM, ObservableObject {
     
     func didSelectRow(_ row: LaunchRow) {
         if case .cell(let model) = row {
-            self.detailCoordinator.start(LaunchDetailVMInput(id: model.id))
+            self.detailCoordinator.start(LaunchDetailVMInput(id: model.id, rocketName: model.rocketName))
         }
     }
 }

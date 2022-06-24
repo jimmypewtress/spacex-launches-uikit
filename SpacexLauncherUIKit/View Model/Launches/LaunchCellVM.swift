@@ -17,7 +17,7 @@ struct LaunchCellVM: Equatable {
 }
 
 extension LaunchCellVM {
-    init (_ launch: Launch) {
+    init (_ launch: ListLaunch) {
         self.rocketName = launch.rocket.name
         self.date = launch.date
         self.dateString = DateFormatter.dayMonthYear.string(from: launch.date)

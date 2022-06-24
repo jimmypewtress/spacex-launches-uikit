@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeadingCell" id="ztH-zU-xog" customClass="HeadingCell" customModule="SpacexLauncherUIKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ztH-zU-xog" id="Hy6-pL-q4V">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAN-u4-zwx" customClass="StyledLabel" customModule="SpacexLauncherUIKit" customModuleProvider="target">
+                        <rect key="frame" x="15" y="2" width="384" height="40"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="sbStyle" value="boldLabelMain18"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rAN-u4-zwx" firstAttribute="leading" secondItem="Hy6-pL-q4V" secondAttribute="leading" constant="15" id="Laz-G2-Y0J"/>
+                    <constraint firstAttribute="bottom" secondItem="rAN-u4-zwx" secondAttribute="bottom" constant="2" id="UE8-ma-qBx"/>
+                    <constraint firstItem="rAN-u4-zwx" firstAttribute="top" secondItem="Hy6-pL-q4V" secondAttribute="top" constant="2" id="WIV-lS-Tqn"/>
+                    <constraint firstAttribute="trailing" secondItem="rAN-u4-zwx" secondAttribute="trailing" constant="15" id="tYW-My-58G"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headingLabel" destination="rAN-u4-zwx" id="rGF-op-fCo"/>
+            </connections>
+            <point key="canvasLocation" x="136" y="128"/>
+        </tableViewCell>
+    </objects>
+</document>

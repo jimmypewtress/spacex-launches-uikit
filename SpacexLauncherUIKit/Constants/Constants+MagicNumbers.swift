@@ -27,5 +27,8 @@ extension Constants {
         static let launchesPrefetchOffset: Int = 4
         
         static let launchesHeaderHeight = 32.0
+        
+        static let launchDetailCellInfoSpacing = 4
+        static let launchDetailCellHeadingSpacing = 15
     }
 }

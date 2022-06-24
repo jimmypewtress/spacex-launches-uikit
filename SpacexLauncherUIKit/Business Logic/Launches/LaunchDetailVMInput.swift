@@ -7,8 +7,11 @@
 
 struct LaunchDetailVMInput: Equatable {
     let id: String
+    let rocketName: String
     
-    init(id: String) {
+    init(id: String,
+         rocketName: String) {
         self.id = id
+        self.rocketName = rocketName
     }
 }

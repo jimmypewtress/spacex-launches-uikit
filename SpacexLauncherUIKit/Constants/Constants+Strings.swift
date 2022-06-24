@@ -40,6 +40,8 @@ extension Constants {
             struct DetailCell {
                 static let success = NSLocalizedString("Success", comment: "Heading for Success label in launch detail cell")
                 static let date = NSLocalizedString("Date", comment: "Heading for Success label in launch detail cell")
+                static let launchpad = NSLocalizedString("Launchpad", comment: "Heading for Launchpad label in launch detail cell")
+                static let description = NSLocalizedString("Description", comment: "Heading for Description label in launch detail cell")
             }
         }
         
