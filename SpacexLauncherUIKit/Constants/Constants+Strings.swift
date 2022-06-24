@@ -19,6 +19,7 @@ extension Constants {
             static let unknown = NSLocalizedString("Unknown", comment: "Unknown")
             static let error = NSLocalizedString("Error", comment: "Error")
         }
+        
         struct Login {
             static let subHeading = NSLocalizedString("Enter your email and password", comment: "Subheading on Login Screen")
             static let forgotPasswordButtonTitle = NSLocalizedString("Forgot Password?", comment: "Title for Forgot Password button on Login Screen")
@@ -42,6 +43,7 @@ extension Constants {
                 static let date = NSLocalizedString("Date", comment: "Heading for Success label in launch detail cell")
                 static let launchpad = NSLocalizedString("Launchpad", comment: "Heading for Launchpad label in launch detail cell")
                 static let description = NSLocalizedString("Description", comment: "Heading for Description label in launch detail cell")
+                static let watchVideo = NSLocalizedString("Watch Video", comment: "Heading for Watch Video button in launch detail cell")
             }
         }
         
@@ -54,6 +56,10 @@ extension Constants {
             static let deserializationIssue = NSLocalizedString("Deserialization Failed", comment: "Deserialization Failed")
             static let httpIssue = NSLocalizedString("Invalid HTTP status code", comment: "Invalid HTTP status code - ")
             static let httpError = NSLocalizedString("HTTP Error", comment: "HTTP Error")
+        }
+        
+        struct YouTube {
+            static let baseUrl = "https://www.youtube.com/watch?v="
         }
     }
 }

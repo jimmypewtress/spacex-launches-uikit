@@ -13,4 +13,5 @@ struct CombinedLaunch {
     let date: Date
     let launchpadName: String
     let description: String
+    let youTubeId: String?
 }

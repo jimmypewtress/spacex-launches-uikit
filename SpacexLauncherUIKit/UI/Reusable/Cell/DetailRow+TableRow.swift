@@ -20,11 +20,15 @@ extension DetailRow: TableRow {
             return Constants.DetailCells.Text.reuseIdentifier
         case .spacer:
             return Constants.DetailCells.Spacer.reuseIdentifier
+        case .button:
+            return Constants.DetailCells.Button.reuseIdentifier
         }
     }
     
     var selectionStyle: UITableViewCell.SelectionStyle {
         switch self {
+        case .button:
+            return .default
         default:
             return .none
         }

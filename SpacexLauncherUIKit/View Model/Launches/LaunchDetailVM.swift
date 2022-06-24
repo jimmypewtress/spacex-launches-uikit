@@ -12,6 +12,8 @@ protocol LaunchDetailVM {
     var tableDataChangedSubject: CurrentValueSubject<Bool, Error> { get }
     var tableRows: [TableRow] { get }
     var selectedRocketName: String { get set }
+    
+    func didSelectRow(_ row: TableRow)
 }
 
 class LaunchDetailVMImpl: BaseVM, LaunchDetailVM {
@@ -21,12 +23,17 @@ class LaunchDetailVMImpl: BaseVM, LaunchDetailVM {
 
     private var uc: LaunchDetailUC
     private var input: LaunchDetailVMInput
+    private var externalUrlCoordintor: ExternalUrlCoordinator
+    
+    private var fetchedLaunch: CombinedLaunch? = nil
     
     init(uc: LaunchDetailUC,
-         input: LaunchDetailVMInput) {
+         input: LaunchDetailVMInput,
+         externalUrlCoordintor: ExternalUrlCoordinator) {
         self.uc = uc
         self.input = input
         self.selectedRocketName = input.rocketName
+        self.externalUrlCoordintor = externalUrlCoordintor
         
         super.init()
         
@@ -57,6 +64,8 @@ class LaunchDetailVMImpl: BaseVM, LaunchDetailVM {
                                              text: launch.launchpadName)
         let descriptionHeadingCellVM = HeadingCellVM(heading: Constants.Strings.Launches.DetailCell.description)
         let textCellVM = TextCellVM(text: launch.description)
+        let buttonCellVM = ButtonCellVM(title: Constants.Strings.Launches.DetailCell.watchVideo,
+                                        enabled: launch.youTubeId != nil)
         
         let detailRows: [DetailRow] = [
             .image(imageCellVM),
@@ -68,11 +77,22 @@ class LaunchDetailVMImpl: BaseVM, LaunchDetailVM {
             .spacer(headingSpacerCellVM),
             .heading(descriptionHeadingCellVM),
             .spacer(infoSpacerCellVM),
-            .text(textCellVM)
+            .text(textCellVM),
+            .spacer(headingSpacerCellVM),
+            .spacer(infoSpacerCellVM),
+            .button(buttonCellVM)
         ]
         
         self.tableRows = detailRows
+        self.fetchedLaunch = launch
         
         self.tableDataChangedSubject.send(true)
+    }
+    
+    func didSelectRow(_ row: TableRow) {
+        if let youTubeId = self.fetchedLaunch?.youTubeId {
+            let youTubeUrl = Constants.Strings.YouTube.baseUrl + youTubeId
+            self.externalUrlCoordintor.start(youTubeUrl)
+        }
     }
 }

@@ -7,7 +7,8 @@
 
 class LaunchDetailCoordinator: NavigationCoordinatorOf<LaunchDetailVMInput> {
     override func onStart(_ obj: LaunchDetailVMInput, r: Resolver = Resolver()) {
-        r.launchDetail.input = .init(input: obj)
+        r.launchDetail.input = .init(input: obj,
+                                     externalUrlCoordintor: ExternalUrlCoordinator())
         
         let vc = r.launchDetail.vc
         

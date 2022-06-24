@@ -11,6 +11,7 @@ extension Resolver {
     class LaunchDetailResolver: SubResolver {
         struct Input {
             var input: LaunchDetailVMInput!
+            var externalUrlCoordintor: ExternalUrlCoordinator!
         }
         
         var input: Input!
@@ -20,7 +21,9 @@ extension Resolver {
         }()
         
         lazy var vm = { [unowned self] () -> LaunchDetailVM in
-            return LaunchDetailVMImpl(uc: self.uc, input: self.input.input)
+            return LaunchDetailVMImpl(uc: self.uc,
+                                      input: self.input.input,
+                                      externalUrlCoordintor: self.input.externalUrlCoordintor)
         }()
         
         lazy var uc = { [unowned self] () -> LaunchDetailUC in

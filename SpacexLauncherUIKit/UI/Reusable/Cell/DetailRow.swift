@@ -11,4 +11,5 @@ enum DetailRow {
     case info(_ cell: InfoCellVM)
     case text(_ cell: TextCellVM)
     case spacer(_ cell: SpacerCellVM)
+    case button(_ cell: ButtonCellVM)
 }

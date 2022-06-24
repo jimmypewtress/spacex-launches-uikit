@@ -43,7 +43,8 @@ class LaunchDetailUCImpl: BaseUC, LaunchDetailUC, ObservableObject {
                                       rocketName: zipResponse.1.name,
                                       date: launchResponse.date,
                                       launchpadName: zipResponse.0.name,
-                                      description: zipResponse.1.description ?? Constants.Strings.General.unknown)
+                                      description: zipResponse.1.description ?? Constants.Strings.General.unknown,
+                                      youTubeId: launchResponse.links.youTubeId)
             }.eraseToAnyPublisher()
         }.sink { _ in
             //  something went wrong 😔

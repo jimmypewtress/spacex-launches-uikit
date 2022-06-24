@@ -31,5 +31,10 @@ extension Constants {
             static let nibName = "SpacerCell"
             static let reuseIdentifier = "SpacerCell"
         }
+        
+        struct Button {
+            static let nibName = "ButtonCell"
+            static let reuseIdentifier = "ButtonCell"
+        }
     }
 }

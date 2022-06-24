@@ -38,6 +38,12 @@ struct SingleRocket: Codable {
 
 struct Links: Codable {
     var patch: Patch
+    var youTubeId: String?
+    
+    private enum CodingKeys: String, CodingKey {
+        case patch
+        case youTubeId = "youtube_id"
+    }
 }
 
 struct Patch: Codable {

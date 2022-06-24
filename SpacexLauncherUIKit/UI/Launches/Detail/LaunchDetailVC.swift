@@ -40,6 +40,8 @@ class LaunchDetailVC: BaseVC {
     }
     
     private func configureUI() {
+        self.tapDismissesKeyboard = false
+        
         self.navigationController?.navigationBar.prefersLargeTitles = false
         self.navigationItem.title = self.viewModel.selectedRocketName
     }
@@ -55,10 +57,11 @@ class LaunchDetailVC: BaseVC {
         InfoCell.register(with: self.tableView)
         TextCell.register(with: self.tableView)
         SpacerCell.register(with: self.tableView)
+        ButtonCell.register(with: self.tableView)
     }
 }
 
-extension LaunchDetailVC: UITableViewDataSource {
+extension LaunchDetailVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.viewModel.tableRows.count
     }
@@ -72,5 +75,12 @@ extension LaunchDetailVC: UITableViewDataSource {
         (cell as? CustomCell)?.configure(with: row, indexPath: indexPath)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.cellForRow(at: indexPath)?.setSelected(false, animated: true)
+        
+        let selectedRow = self.viewModel.tableRows[indexPath.row]
+        self.viewModel.didSelectRow(selectedRow)
     }
 }
