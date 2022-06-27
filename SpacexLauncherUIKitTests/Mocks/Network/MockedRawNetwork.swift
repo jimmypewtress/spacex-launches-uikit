@@ -11,13 +11,25 @@ import Combine
 
 class MockedRawNetwork: RawNetwork {
     var request: RawRequest?
-    var response = RawResponse()
+    var launchesResponse = RawResponse()
+    var launchResponse = RawResponse()
+    var launchpadResponse = RawResponse()
+    var rocketResponse = RawResponse()
     
     func makeAsyncRequest(_ rawRequest: RawRequest) -> Future<RawResponse, Never> {
         self.request = rawRequest
         
         return Future() { promise in
-            promise(Result.success(self.response))
+            switch rawRequest.endpoint {
+            case .launches:
+                promise(Result.success(self.launchesResponse))
+            case .launch:
+                promise(Result.success(self.launchResponse))
+            case .launchpad:
+                promise(Result.success(self.launchpadResponse))
+            case .rocket:
+                promise(Result.success(self.rocketResponse))
+            }
         }
     }
 }

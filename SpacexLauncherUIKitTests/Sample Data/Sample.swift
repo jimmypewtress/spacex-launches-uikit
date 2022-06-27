@@ -8,5 +8,8 @@
 import Foundation
 
 class Sample: NSObject {
+    static let launches = SampleLaunches()
     static let launch = SampleLaunch()
+    static let launchpad = SampleLaunchpad()
+    static let rocket = SampleRocket()
 }

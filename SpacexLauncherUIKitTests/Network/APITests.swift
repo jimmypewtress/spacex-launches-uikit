@@ -83,7 +83,7 @@ class APITests: TestCase {
     }
     
     func testDeserializationFailure() {
-        self.network.response.data = try? JSONEncoder().encode(["2": 1])
+        self.network.launchesResponse.data = try? JSONEncoder().encode(["2": 1])
         
         let failExpectation = expectation(description: "request should fail")
         let errorExpectation = expectation(description: "error should be generated")
@@ -109,8 +109,8 @@ class APITests: TestCase {
     }
     
     func testNoHostErrorHandled() {
-        self.network.response.networkingError = .noHostForEndpoint
-        self.network.response.data = try? JSONEncoder().encode(dummyOutput)
+        self.network.launchesResponse.networkingError = .noHostForEndpoint
+        self.network.launchesResponse.data = try? JSONEncoder().encode(dummyOutput)
         
         let failExpectation = expectation(description: "request should fail")
         let errorExpectation = expectation(description: "error should be generated")
@@ -135,8 +135,8 @@ class APITests: TestCase {
     }
     
     func testCannotCreateUrlErroHandled() {
-        self.network.response.networkingError = .cannotCreateUrl
-        self.network.response.data = try? JSONEncoder().encode(dummyOutput)
+        self.network.launchesResponse.networkingError = .cannotCreateUrl
+        self.network.launchesResponse.data = try? JSONEncoder().encode(dummyOutput)
 
         let failExpectation = expectation(description: "request should fail")
         let errorExpectation = expectation(description: "error should be generated")
@@ -161,8 +161,8 @@ class APITests: TestCase {
     }
     
     func testNoHttpResponseErrorHandled() {
-        self.network.response.networkingError = .noHttpResponse
-        self.network.response.data = try? JSONEncoder().encode(dummyOutput)
+        self.network.launchesResponse.networkingError = .noHttpResponse
+        self.network.launchesResponse.data = try? JSONEncoder().encode(dummyOutput)
 
         let failExpectation = expectation(description: "request should fail")
         let errorExpectation = expectation(description: "error should be generated")
@@ -187,8 +187,8 @@ class APITests: TestCase {
     }
     
     func testHttpIssueErrorHandled() {
-        self.network.response.httpStatusCode = 500
-        self.network.response.data = try? JSONEncoder().encode(dummyOutput)
+        self.network.launchesResponse.httpStatusCode = 500
+        self.network.launchesResponse.data = try? JSONEncoder().encode(dummyOutput)
 
         let failExpectation = expectation(description: "request should fail")
         let errorExpectation = expectation(description: "error should be generated")
@@ -215,9 +215,9 @@ class APITests: TestCase {
     let dummyUrlError = NSError(domain: NSURLErrorCannotConnectToHost.description, code: 123)
     
     func testUrlErrorDomainFailure() {
-        self.network.response.urlErrorCode = dummyUrlError.code
-        self.network.response.urlErrorLocalizedDescription = dummyUrlError.localizedDescription
-        self.network.response.data = try? JSONEncoder().encode(dummyOutput)
+        self.network.launchesResponse.urlErrorCode = dummyUrlError.code
+        self.network.launchesResponse.urlErrorLocalizedDescription = dummyUrlError.localizedDescription
+        self.network.launchesResponse.data = try? JSONEncoder().encode(dummyOutput)
         
         let failExpectation = expectation(description: "request should fail")
         let errorExpectation = expectation(description: "error should be generated")
@@ -242,7 +242,7 @@ class APITests: TestCase {
     }
     
     func testSuccessfullResponse() {
-        self.network.response.data = try? JSONEncoder().encode(dummyOutput)
+        self.network.launchesResponse.data = try? JSONEncoder().encode(dummyOutput)
         
         let successExpectation = expectation(description: "request should succeed")
         

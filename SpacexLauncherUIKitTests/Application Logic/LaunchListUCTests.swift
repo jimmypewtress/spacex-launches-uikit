@@ -25,7 +25,7 @@ class LaunchListUCTests: TestCase {
     }
 
     func testSuccessfulRequest() {
-        self.network.response.data = Sample.launch.launchesData
+        self.network.launchesResponse.data = Sample.launches.launchesData
         
         let willReturnDataExpectation = expectation(description: "will return some data")
         
@@ -46,7 +46,7 @@ class LaunchListUCTests: TestCase {
     }
     
     func testUnsuccessfulRequest() {
-        self.network.response.networkingError = .deserializationIssue
+        self.network.launchesResponse.networkingError = .deserializationIssue
         
         let willReturnDataExpectation = expectation(description: "will return some data")
         willReturnDataExpectation.isInverted = true

@@ -162,8 +162,16 @@
 		19E7E2AE2865A7B10005C4A3 /* Constants+DetailCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E7E2AD2865A7B10005C4A3 /* Constants+DetailCells.swift */; };
 		19E7E2B02865A8C50005C4A3 /* DetailRow+TableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E7E2AF2865A8C50005C4A3 /* DetailRow+TableRow.swift */; };
 		19E7E2B22865A92A0005C4A3 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19E7E2B12865A92A0005C4A3 /* ImageCell.xib */; };
+		19E9A5BA2869A301008102AC /* LaunchDetailUCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E9A5B92869A301008102AC /* LaunchDetailUCTests.swift */; };
+		19E9A5BE2869A72B008102AC /* SampleLaunch.json in Resources */ = {isa = PBXBuildFile; fileRef = 19E9A5BD2869A72B008102AC /* SampleLaunch.json */; };
+		19E9A5C02869A75C008102AC /* SampleLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E9A5BF2869A75C008102AC /* SampleLaunch.swift */; };
+		19E9A5C42869A8BF008102AC /* SampleLaunchpad.json in Resources */ = {isa = PBXBuildFile; fileRef = 19E9A5C32869A8BF008102AC /* SampleLaunchpad.json */; };
+		19E9A5C62869A8C6008102AC /* SampleRocket.json in Resources */ = {isa = PBXBuildFile; fileRef = 19E9A5C52869A8C6008102AC /* SampleRocket.json */; };
+		19E9A5C82869A8DE008102AC /* SampleLaunchpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E9A5C72869A8DE008102AC /* SampleLaunchpad.swift */; };
+		19E9A5CA2869A8EA008102AC /* SampleRocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E9A5C92869A8EA008102AC /* SampleRocket.swift */; };
+		19E9A5CC2869B064008102AC /* SampleRocketNoDescription.json in Resources */ = {isa = PBXBuildFile; fileRef = 19E9A5CB2869B064008102AC /* SampleRocketNoDescription.json */; };
 		19EA4D7F285E290E00DE3D19 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D7E285E290E00DE3D19 /* Sample.swift */; };
-		19EA4D81285E293E00DE3D19 /* SampleLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D80285E293E00DE3D19 /* SampleLaunch.swift */; };
+		19EA4D81285E293E00DE3D19 /* SampleLaunches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D80285E293E00DE3D19 /* SampleLaunches.swift */; };
 		19EA4D84285E2A0F00DE3D19 /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D83285E2A0F00DE3D19 /* TestUtils.swift */; };
 		19EA4D88285E32D400DE3D19 /* SampleLaunches.json in Resources */ = {isa = PBXBuildFile; fileRef = 19EA4D87285E32D400DE3D19 /* SampleLaunches.json */; };
 		19EA4D8A285E460300DE3D19 /* MockedLogoutUC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D89285E460300DE3D19 /* MockedLogoutUC.swift */; };
@@ -360,8 +368,16 @@
 		19E7E2AD2865A7B10005C4A3 /* Constants+DetailCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+DetailCells.swift"; sourceTree = "<group>"; };
 		19E7E2AF2865A8C50005C4A3 /* DetailRow+TableRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailRow+TableRow.swift"; sourceTree = "<group>"; };
 		19E7E2B12865A92A0005C4A3 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		19E9A5B92869A301008102AC /* LaunchDetailUCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailUCTests.swift; sourceTree = "<group>"; };
+		19E9A5BD2869A72B008102AC /* SampleLaunch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleLaunch.json; sourceTree = "<group>"; };
+		19E9A5BF2869A75C008102AC /* SampleLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLaunch.swift; sourceTree = "<group>"; };
+		19E9A5C32869A8BF008102AC /* SampleLaunchpad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleLaunchpad.json; sourceTree = "<group>"; };
+		19E9A5C52869A8C6008102AC /* SampleRocket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleRocket.json; sourceTree = "<group>"; };
+		19E9A5C72869A8DE008102AC /* SampleLaunchpad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLaunchpad.swift; sourceTree = "<group>"; };
+		19E9A5C92869A8EA008102AC /* SampleRocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRocket.swift; sourceTree = "<group>"; };
+		19E9A5CB2869B064008102AC /* SampleRocketNoDescription.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleRocketNoDescription.json; sourceTree = "<group>"; };
 		19EA4D7E285E290E00DE3D19 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
-		19EA4D80285E293E00DE3D19 /* SampleLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLaunch.swift; sourceTree = "<group>"; };
+		19EA4D80285E293E00DE3D19 /* SampleLaunches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLaunches.swift; sourceTree = "<group>"; };
 		19EA4D83285E2A0F00DE3D19 /* TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
 		19EA4D87285E32D400DE3D19 /* SampleLaunches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleLaunches.json; sourceTree = "<group>"; };
 		19EA4D89285E460300DE3D19 /* MockedLogoutUC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedLogoutUC.swift; sourceTree = "<group>"; };
@@ -1053,12 +1069,51 @@
 			path = ImageCell;
 			sourceTree = "<group>";
 		};
+		19E9A5BB2869A58F008102AC /* Launches */ = {
+			isa = PBXGroup;
+			children = (
+				19EA4D80285E293E00DE3D19 /* SampleLaunches.swift */,
+				19EA4D87285E32D400DE3D19 /* SampleLaunches.json */,
+			);
+			path = Launches;
+			sourceTree = "<group>";
+		};
+		19E9A5BC2869A59A008102AC /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				19E9A5BF2869A75C008102AC /* SampleLaunch.swift */,
+				19E9A5BD2869A72B008102AC /* SampleLaunch.json */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		19E9A5C12869A807008102AC /* LaunchPad */ = {
+			isa = PBXGroup;
+			children = (
+				19E9A5C72869A8DE008102AC /* SampleLaunchpad.swift */,
+				19E9A5C32869A8BF008102AC /* SampleLaunchpad.json */,
+			);
+			path = LaunchPad;
+			sourceTree = "<group>";
+		};
+		19E9A5C22869A811008102AC /* Rocket */ = {
+			isa = PBXGroup;
+			children = (
+				19E9A5C92869A8EA008102AC /* SampleRocket.swift */,
+				19E9A5C52869A8C6008102AC /* SampleRocket.json */,
+				19E9A5CB2869B064008102AC /* SampleRocketNoDescription.json */,
+			);
+			path = Rocket;
+			sourceTree = "<group>";
+		};
 		19EA4D7D285E28E800DE3D19 /* Sample Data */ = {
 			isa = PBXGroup;
 			children = (
 				19EA4D7E285E290E00DE3D19 /* Sample.swift */,
-				19EA4D80285E293E00DE3D19 /* SampleLaunch.swift */,
-				19EA4D87285E32D400DE3D19 /* SampleLaunches.json */,
+				19E9A5BB2869A58F008102AC /* Launches */,
+				19E9A5BC2869A59A008102AC /* Launch */,
+				19E9A5C12869A807008102AC /* LaunchPad */,
+				19E9A5C22869A811008102AC /* Rocket */,
 			);
 			path = "Sample Data";
 			sourceTree = "<group>";
@@ -1078,6 +1133,7 @@
 				19EA4D92285EFE9600DE3D19 /* LoginUCTests.swift */,
 				19EA4D94285F006500DE3D19 /* LogoutUCTests.swift */,
 				19EA4D98285F107800DE3D19 /* ForgotPasswordUCTests.swift */,
+				19E9A5B92869A301008102AC /* LaunchDetailUCTests.swift */,
 			);
 			path = "Application Logic";
 			sourceTree = "<group>";
@@ -1234,7 +1290,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19E9A5BE2869A72B008102AC /* SampleLaunch.json in Resources */,
+				19E9A5C42869A8BF008102AC /* SampleLaunchpad.json in Resources */,
 				19EA4D88285E32D400DE3D19 /* SampleLaunches.json in Resources */,
+				19E9A5CC2869B064008102AC /* SampleRocketNoDescription.json in Resources */,
+				19E9A5C62869A8C6008102AC /* SampleRocket.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1397,10 +1457,14 @@
 				198246D52857A2CD001CD484 /* MockedAlertPresenter.swift in Sources */,
 				19CCCC112857304D0015DC2B /* LoginVMTests.swift in Sources */,
 				196B4C34285E23A6004DFF69 /* LaunchListVMTests.swift in Sources */,
+				19E9A5C82869A8DE008102AC /* SampleLaunchpad.swift in Sources */,
 				19EA4D93285EFE9600DE3D19 /* LoginUCTests.swift in Sources */,
+				19E9A5BA2869A301008102AC /* LaunchDetailUCTests.swift in Sources */,
 				196B4C1A285DDA2F004DFF69 /* RawNetworkTests.swift in Sources */,
 				19EA4D97285F020600DE3D19 /* MainNavigationVMTests.swift in Sources */,
 				19CCCC192857393B0015DC2B /* MockedNavigationCoordinator.swift in Sources */,
+				19E9A5CA2869A8EA008102AC /* SampleRocket.swift in Sources */,
+				19E9A5C02869A75C008102AC /* SampleLaunch.swift in Sources */,
 				19EA4D84285E2A0F00DE3D19 /* TestUtils.swift in Sources */,
 				19CCCC16285735150015DC2B /* MockedLoginUC.swift in Sources */,
 				19EA4D95285F006500DE3D19 /* LogoutUCTests.swift in Sources */,
@@ -1408,7 +1472,7 @@
 				19EA4D8A285E460300DE3D19 /* MockedLogoutUC.swift in Sources */,
 				19EA4D8F285EF58400DE3D19 /* LaunchListUCTests.swift in Sources */,
 				196B4C1D285DDB1D004DFF69 /* MockedEnvironment.swift in Sources */,
-				19EA4D81285E293E00DE3D19 /* SampleLaunch.swift in Sources */,
+				19EA4D81285E293E00DE3D19 /* SampleLaunches.swift in Sources */,
 				19EA4D7F285E290E00DE3D19 /* Sample.swift in Sources */,
 				196B4C32285E21ED004DFF69 /* MockedLaunchListUC.swift in Sources */,
 				19CCCC1B285779E70015DC2B /* MockedForgotPasswordUC.swift in Sources */,

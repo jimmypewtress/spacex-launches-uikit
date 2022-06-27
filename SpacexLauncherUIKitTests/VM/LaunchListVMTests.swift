@@ -40,7 +40,7 @@ class LaunchListVMTests: TestCase {
     }
 
     func testTableDataSourcePopulation() {
-        self.uc.output = Sample.launch.launchesList
+        self.uc.output = Sample.launches.launchesList
 
         let dateIsPopulatedExpectation = expectation(description: "data gets populated")
         var tableChangedCounter = 0
@@ -113,7 +113,7 @@ class LaunchListVMTests: TestCase {
     }
     
     func testSpinnerGetsAddedOnPrefetchAndThenDisappearsWhenNewDataComes() {
-        self.uc.output = Sample.launch.launchesList
+        self.uc.output = Sample.launches.launchesList
 
         let spinnerNotThereExpectation = expectation(description: "spinner not there")
         let spinnerIsAddedExpectation = expectation(description: "spinner gets added")
@@ -169,9 +169,9 @@ class LaunchListVMTests: TestCase {
     }
     
     func testLaunchSelected() {
-        let selectedRow = LaunchRow.cell(LaunchCellVM(Sample.launch.launchesSingle!))
+        let selectedRow = LaunchRow.cell(LaunchCellVM(Sample.launches.launchesSingle!))
         
-        let expectedInput = LaunchDetailVMInput(id: "6243aec2af52800c6e91925d")
+        let expectedInput = LaunchDetailVMInput(id: "6243aec2af52800c6e91925d", rocketName: "Falcon 9")
         
         expectNavigationCoordinatorToStart(self.detailCoordinator, with: expectedInput)
         
