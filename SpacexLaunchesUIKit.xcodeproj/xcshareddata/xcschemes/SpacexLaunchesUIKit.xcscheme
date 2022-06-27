@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "19E1CDA4284F3F7700E24EBA"
-               BuildableName = "SpacexLauncherUIKit.app"
-               BlueprintName = "SpacexLauncherUIKit"
-               ReferencedContainer = "container:SpacexLauncherUIKit.xcodeproj">
+               BuildableName = "SpacexLaunchesUIKit.app"
+               BlueprintName = "SpacexLaunchesUIKit"
+               ReferencedContainer = "container:SpacexLaunchesUIKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "19E1CDBA284F3F7A00E24EBA"
-               BuildableName = "SpacexLauncherUIKitTests.xctest"
-               BlueprintName = "SpacexLauncherUIKitTests"
-               ReferencedContainer = "container:SpacexLauncherUIKit.xcodeproj">
+               BuildableName = "SpacexLaunchesUIKitTests.xctest"
+               BlueprintName = "SpacexLaunchesUIKitTests"
+               ReferencedContainer = "container:SpacexLaunchesUIKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -44,9 +44,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "19E1CDC4284F3F7A00E24EBA"
-               BuildableName = "SpacexLauncherUIKitUITests.xctest"
-               BlueprintName = "SpacexLauncherUIKitUITests"
-               ReferencedContainer = "container:SpacexLauncherUIKit.xcodeproj">
+               BuildableName = "SpacexLaunchesUIKitUITests.xctest"
+               BlueprintName = "SpacexLaunchesUIKitUITests"
+               ReferencedContainer = "container:SpacexLaunchesUIKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "19E1CDA4284F3F7700E24EBA"
-            BuildableName = "SpacexLauncherUIKit.app"
-            BlueprintName = "SpacexLauncherUIKit"
-            ReferencedContainer = "container:SpacexLauncherUIKit.xcodeproj">
+            BuildableName = "SpacexLaunchesUIKit.app"
+            BlueprintName = "SpacexLaunchesUIKit"
+            ReferencedContainer = "container:SpacexLaunchesUIKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "19E1CDA4284F3F7700E24EBA"
-            BuildableName = "SpacexLauncherUIKit.app"
-            BlueprintName = "SpacexLauncherUIKit"
-            ReferencedContainer = "container:SpacexLauncherUIKit.xcodeproj">
+            BuildableName = "SpacexLaunchesUIKit.app"
+            BlueprintName = "SpacexLaunchesUIKit"
+            ReferencedContainer = "container:SpacexLaunchesUIKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
