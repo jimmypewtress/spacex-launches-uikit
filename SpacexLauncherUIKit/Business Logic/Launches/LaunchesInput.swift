@@ -15,8 +15,12 @@ struct LaunchesInputQuery: Codable {
 }
 
 struct LaunchesInputOptions: Codable {
-    var populate: [String] = ["rocket"]
+    var populate: [Path] = [.init(path: "rocket")]
     var sort: [String: Int] = ["date_unix": -1]
     var offset: Int
     var limit: Int
+}
+
+struct Path: Codable {
+    var path: String!
 }
