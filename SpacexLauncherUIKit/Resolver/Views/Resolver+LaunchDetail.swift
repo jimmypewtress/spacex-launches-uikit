@@ -11,7 +11,7 @@ extension Resolver {
     class LaunchDetailResolver: SubResolver {
         struct Input {
             var input: LaunchDetailVMInput!
-            var externalUrlCoordintor: ExternalUrlCoordinator!
+            var externalUrlCoordintor: CoordinatorOf<String>!
         }
         
         var input: Input!

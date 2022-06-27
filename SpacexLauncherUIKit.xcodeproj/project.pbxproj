@@ -170,6 +170,8 @@
 		19E9A5C82869A8DE008102AC /* SampleLaunchpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E9A5C72869A8DE008102AC /* SampleLaunchpad.swift */; };
 		19E9A5CA2869A8EA008102AC /* SampleRocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E9A5C92869A8EA008102AC /* SampleRocket.swift */; };
 		19E9A5CC2869B064008102AC /* SampleRocketNoDescription.json in Resources */ = {isa = PBXBuildFile; fileRef = 19E9A5CB2869B064008102AC /* SampleRocketNoDescription.json */; };
+		19E9A5CE2869B232008102AC /* MockedLaunchDetailUC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E9A5CD2869B232008102AC /* MockedLaunchDetailUC.swift */; };
+		19E9A5D02869B39D008102AC /* LaunchDetailVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E9A5CF2869B39D008102AC /* LaunchDetailVMTests.swift */; };
 		19EA4D7F285E290E00DE3D19 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D7E285E290E00DE3D19 /* Sample.swift */; };
 		19EA4D81285E293E00DE3D19 /* SampleLaunches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D80285E293E00DE3D19 /* SampleLaunches.swift */; };
 		19EA4D84285E2A0F00DE3D19 /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA4D83285E2A0F00DE3D19 /* TestUtils.swift */; };
@@ -376,6 +378,8 @@
 		19E9A5C72869A8DE008102AC /* SampleLaunchpad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLaunchpad.swift; sourceTree = "<group>"; };
 		19E9A5C92869A8EA008102AC /* SampleRocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRocket.swift; sourceTree = "<group>"; };
 		19E9A5CB2869B064008102AC /* SampleRocketNoDescription.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleRocketNoDescription.json; sourceTree = "<group>"; };
+		19E9A5CD2869B232008102AC /* MockedLaunchDetailUC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedLaunchDetailUC.swift; sourceTree = "<group>"; };
+		19E9A5CF2869B39D008102AC /* LaunchDetailVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailVMTests.swift; sourceTree = "<group>"; };
 		19EA4D7E285E290E00DE3D19 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		19EA4D80285E293E00DE3D19 /* SampleLaunches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLaunches.swift; sourceTree = "<group>"; };
 		19EA4D83285E2A0F00DE3D19 /* TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
@@ -681,6 +685,7 @@
 				196B4C33285E23A6004DFF69 /* LaunchListVMTests.swift */,
 				19EA4D8B285EEDDC00DE3D19 /* LaunchCellVMTests.swift */,
 				19EA4D96285F020600DE3D19 /* MainNavigationVMTests.swift */,
+				19E9A5CF2869B39D008102AC /* LaunchDetailVMTests.swift */,
 			);
 			path = VM;
 			sourceTree = "<group>";
@@ -704,6 +709,7 @@
 				19EA4D89285E460300DE3D19 /* MockedLogoutUC.swift */,
 				19CCCC1A285779E70015DC2B /* MockedForgotPasswordUC.swift */,
 				196B4C31285E21ED004DFF69 /* MockedLaunchListUC.swift */,
+				19E9A5CD2869B232008102AC /* MockedLaunchDetailUC.swift */,
 			);
 			path = UC;
 			sourceTree = "<group>";
@@ -1455,10 +1461,12 @@
 				19CCCC1D28577B090015DC2B /* ForgotPasswordVMTests.swift in Sources */,
 				19D809A8285DC59B0072A27F /* APITests.swift in Sources */,
 				198246D52857A2CD001CD484 /* MockedAlertPresenter.swift in Sources */,
+				19E9A5CE2869B232008102AC /* MockedLaunchDetailUC.swift in Sources */,
 				19CCCC112857304D0015DC2B /* LoginVMTests.swift in Sources */,
 				196B4C34285E23A6004DFF69 /* LaunchListVMTests.swift in Sources */,
 				19E9A5C82869A8DE008102AC /* SampleLaunchpad.swift in Sources */,
 				19EA4D93285EFE9600DE3D19 /* LoginUCTests.swift in Sources */,
+				19E9A5D02869B39D008102AC /* LaunchDetailVMTests.swift in Sources */,
 				19E9A5BA2869A301008102AC /* LaunchDetailUCTests.swift in Sources */,
 				196B4C1A285DDA2F004DFF69 /* RawNetworkTests.swift in Sources */,
 				19EA4D97285F020600DE3D19 /* MainNavigationVMTests.swift in Sources */,

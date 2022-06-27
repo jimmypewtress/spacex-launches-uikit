@@ -23,13 +23,13 @@ class LaunchDetailVMImpl: BaseVM, LaunchDetailVM {
 
     private var uc: LaunchDetailUC
     private var input: LaunchDetailVMInput
-    private var externalUrlCoordintor: ExternalUrlCoordinator
+    private var externalUrlCoordintor: CoordinatorOf<String>
     
     private var fetchedLaunch: CombinedLaunch? = nil
     
     init(uc: LaunchDetailUC,
          input: LaunchDetailVMInput,
-         externalUrlCoordintor: ExternalUrlCoordinator) {
+         externalUrlCoordintor: CoordinatorOf<String>) {
         self.uc = uc
         self.input = input
         self.selectedRocketName = input.rocketName
