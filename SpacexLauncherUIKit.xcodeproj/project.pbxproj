@@ -859,7 +859,6 @@
 				19E1CDE0284F5EA600E24EBA /* Utils */,
 				190E5B18285076E900ABC917 /* Extensions */,
 				198246D728587FAD001CD484 /* Supporting Files */,
-				19E1CDB1284F3F7900E24EBA /* Assets.xcassets */,
 			);
 			path = SpacexLauncherUIKit;
 			sourceTree = "<group>";
@@ -993,6 +992,7 @@
 			isa = PBXGroup;
 			children = (
 				19E1CDB3284F3F7900E24EBA /* LaunchScreen.storyboard */,
+				19E1CDB1284F3F7900E24EBA /* Assets.xcassets */,
 				19D21D2228535CD100F73F99 /* NavigationRoot.swift */,
 				19CFE8792852346700A1BD80 /* BaseVC.swift */,
 				19D21D2A285372CF00F73F99 /* MainNavigationVC.swift */,
