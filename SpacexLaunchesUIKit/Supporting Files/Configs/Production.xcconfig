@@ -11,3 +11,4 @@ port                        =
 base_path                   = /v4
 connection_protocol         = https
 FLAGS                       =
+PRODUCT_DISPLAY_NAME        = SpaceX
