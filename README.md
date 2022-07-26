@@ -4,6 +4,8 @@ A simple app that calls an API to get a list of SpaceX launches, displays detail
 
 A mocked out login screen is present to demonstrate a root navigation flow and implement features such as text validation and conditional UI states.
 
+I got some designs done via Fiverr to have something to work from and build some reusable UI components for etc - https://www.figma.com/file/mIoqjNzmr3hHokzm0vGgsd/SpeceX 
+
 ## Architecture
 
 The app follows a clean archicture design, using the classic rings diagram as a starting point:
@@ -13,7 +15,7 @@ The app follows a clean archicture design, using the classic rings diagram as a 
 Starting from the outside,
 
 - View Controllers and Storyboards make up the UI Layer
-- The View Controllers are as dumb as possible and driven by View Models which supply the data to display and handle and user interaction
+- The View Controllers are as dumb as possible and driven by View Models which supply the data to display and handle any user interaction
 - Application tasks such as making API calls are handled by Use Cases
 - Data models of the various launch features make up the Entities layer
 
@@ -23,7 +25,7 @@ The project achieves 100% unit test coverage for each of the view models and use
 
 Navigation and the pulling together of all the various dependencies is handled by Coordinator objects.
 
-I orginally inteded this project to be a learning project for both Combine and SwiftUI, but after some research I'm not convinced this Clean/MVVM type approach is suitable for SwiftUI.  Combine works well with this approach for the bindings between objects, but it does a bit "shoehorned" in and it's evident it's designed more to work with SwiftUI.
+I orginally inteded this app to be a learning project for both Combine and SwiftUI, but after some research I'm not convinced this Clean/MVVM type approach is suitable for SwiftUI.  Combine works well with this approach for the bindings between objects, but it does a bit "shoehorned" in and it's evident it's designed more to work with SwiftUI.
 
 I have another repo where I'm rebuilding the exact same app in SwiftUI [here](https://github.com/jimmypewtress/spacex-launches-swiftui).
 
